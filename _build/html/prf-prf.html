@@ -1,0 +1,1544 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proof Index &#8212; MAS 107 Semester 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'prf-prf';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+
+    <script>
+      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
+    </script>
+
+
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/UOS_logo.png" class="logo__image only-light" alt="MAS 107 Semester 2 - Home"/>
+    <script>document.write(`<img src="_static/UOS_logo.png" class="logo__image only-dark" alt="MAS 107 Semester 2 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MAS107 Foundations of Pure Mathematics Semester 2 An Introduction to Analysis
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="someNotation.html">Some Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer and Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter1_Introduction.html">Chapter 1 Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2_TheRealNumbers.html">Chapter 2 The Real Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3_Sequences.html">Chapter 3 Sequences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4_Series.html">Chapter 4 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5_WhatsNext.html">Chapter 5 What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fprf-prf.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+
+   <h1>Proof Index</h1>
+
+   <div class="modindex-jumpbox">
+   <a href="#cap-AOL"><strong>AOL</strong></a> | 
+   <a href="#cap-AlgebraSeries"><strong>AlgebraSeries</strong></a> | 
+   <a href="#cap-AlternatingTest"><strong>AlternatingTest</strong></a> | 
+   <a href="#cap-Arch"><strong>Arch</strong></a> | 
+   <a href="#cap-BW"><strong>BW</strong></a> | 
+   <a href="#cap-CauchyCondensation"><strong>CauchyCondensation</strong></a> | 
+   <a href="#cap-CauchySeries"><strong>CauchySeries</strong></a> | 
+   <a href="#cap-Cauchyconvsubseq"><strong>Cauchyconvsubseq</strong></a> | 
+   <a href="#cap-ClosedSetProposition"><strong>ClosedSetProposition</strong></a> | 
+   <a href="#cap-Dirichlet"><strong>Dirichlet</strong></a> | 
+   <a href="#cap-IntegralTest"><strong>IntegralTest</strong></a> | 
+   <a href="#cap-IntegralTest0}"><strong>IntegralTest0}</strong></a> | 
+   <a href="#cap-LimitTest"><strong>LimitTest</strong></a> | 
+   <a href="#cap-Nirat"><strong>Nirat</strong></a> | 
+   <a href="#cap-OLT"><strong>OLT</strong></a> | 
+   <a href="#cap-OpenClosedComplementTheorem"><strong>OpenClosedComplementTheorem</strong></a> | 
+   <a href="#cap-OpenSetProposition"><strong>OpenSetProposition</strong></a> | 
+   <a href="#cap-RatioTest0"><strong>RatioTest0</strong></a> | 
+   <a href="#cap-RootTest"><strong>RootTest</strong></a> | 
+   <a href="#cap-absoluteimpliesstandard"><strong>absoluteimpliesstandard</strong></a> | 
+   <a href="#cap-aton0"><strong>aton0</strong></a> | 
+   <a href="#cap-axiomofcompleteness"><strong>axiomofcompleteness</strong></a> | 
+   <a href="#cap-axiomofcompletenessforR"><strong>axiomofcompletenessforR</strong></a> | 
+   <a href="#cap-charproinf"><strong>charproinf</strong></a> | 
+   <a href="#cap-charpropsup"><strong>charpropsup</strong></a> | 
+   <a href="#cap-closedclosed"><strong>closedclosed</strong></a> | 
+   <a href="#cap-closedincompleteiscomplete"><strong>closedincompleteiscomplete</strong></a> | 
+   <a href="#cap-comparison test"><strong>comparison test</strong></a> | 
+   <a href="#cap-completeclosed"><strong>completeclosed</strong></a> | 
+   <a href="#cap-completeness"><strong>completeness</strong></a> | 
+   <a href="#cap-convCauchy_bnd"><strong>convCauchy_bnd</strong></a> | 
+   <a href="#cap-convbnd"><strong>convbnd</strong></a> | 
+   <a href="#cap-converge-to-1"><strong>converge-to-1</strong></a> | 
+   <a href="#cap-convergenceepsiN"><strong>convergenceepsiN</strong></a> | 
+   <a href="#cap-convergencetopological"><strong>convergencetopological</strong></a> | 
+   <a href="#cap-corollary-36"><strong>corollary-36</strong></a> | 
+   <a href="#cap-cortri"><strong>cortri</strong></a> | 
+   <a href="#cap-countability"><strong>countability</strong></a> | 
+   <a href="#cap-cs"><strong>cs</strong></a> | 
+   <a href="#cap-defCauchy2"><strong>defCauchy2</strong></a> | 
+   <a href="#cap-defclosed"><strong>defclosed</strong></a> | 
+   <a href="#cap-definition-0"><strong>definition-0</strong></a> | 
+   <a href="#cap-definition-11"><strong>definition-11</strong></a> | 
+   <a href="#cap-definition-15"><strong>definition-15</strong></a> | 
+   <a href="#cap-definition-16"><strong>definition-16</strong></a> | 
+   <a href="#cap-definition-23"><strong>definition-23</strong></a> | 
+   <a href="#cap-definition-29"><strong>definition-29</strong></a> | 
+   <a href="#cap-definition-33"><strong>definition-33</strong></a> | 
+   <a href="#cap-definition-39"><strong>definition-39</strong></a> | 
+   <a href="#cap-definition-43"><strong>definition-43</strong></a> | 
+   <a href="#cap-definition-53"><strong>definition-53</strong></a> | 
+   <a href="#cap-definition-7"><strong>definition-7</strong></a> | 
+   <a href="#cap-defnopen"><strong>defnopen</strong></a> | 
+   <a href="#cap-divergencecriterion"><strong>divergencecriterion</strong></a> | 
+   <a href="#cap-epsinbhd"><strong>epsinbhd</strong></a> | 
+   <a href="#cap-example-0"><strong>example-0</strong></a> | 
+   <a href="#cap-example-12"><strong>example-12</strong></a> | 
+   <a href="#cap-example-13"><strong>example-13</strong></a> | 
+   <a href="#cap-example-14"><strong>example-14</strong></a> | 
+   <a href="#cap-example-15"><strong>example-15</strong></a> | 
+   <a href="#cap-example-16"><strong>example-16</strong></a> | 
+   <a href="#cap-example-17"><strong>example-17</strong></a> | 
+   <a href="#cap-example-18"><strong>example-18</strong></a> | 
+   <a href="#cap-example-19"><strong>example-19</strong></a> | 
+   <a href="#cap-example-2"><strong>example-2</strong></a> | 
+   <a href="#cap-example-21"><strong>example-21</strong></a> | 
+   <a href="#cap-example-22"><strong>example-22</strong></a> | 
+   <a href="#cap-example-23"><strong>example-23</strong></a> | 
+   <a href="#cap-example-25"><strong>example-25</strong></a> | 
+   <a href="#cap-example-26"><strong>example-26</strong></a> | 
+   <a href="#cap-example-27"><strong>example-27</strong></a> | 
+   <a href="#cap-example-28"><strong>example-28</strong></a> | 
+   <a href="#cap-example-3"><strong>example-3</strong></a> | 
+   <a href="#cap-example-30"><strong>example-30</strong></a> | 
+   <a href="#cap-example-32"><strong>example-32</strong></a> | 
+   <a href="#cap-example-35"><strong>example-35</strong></a> | 
+   <a href="#cap-example-38"><strong>example-38</strong></a> | 
+   <a href="#cap-example-39"><strong>example-39</strong></a> | 
+   <a href="#cap-example-41"><strong>example-41</strong></a> | 
+   <a href="#cap-example-42"><strong>example-42</strong></a> | 
+   <a href="#cap-example-49"><strong>example-49</strong></a> | 
+   <a href="#cap-example-51"><strong>example-51</strong></a> | 
+   <a href="#cap-example-52"><strong>example-52</strong></a> | 
+   <a href="#cap-example-56"><strong>example-56</strong></a> | 
+   <a href="#cap-example-8"><strong>example-8</strong></a> | 
+   <a href="#cap-example-9"><strong>example-9</strong></a> | 
+   <a href="#cap-firstproof"><strong>firstproof</strong></a> | 
+   <a href="#cap-harmonic"><strong>harmonic</strong></a> | 
+   <a href="#cap-infirrat"><strong>infirrat</strong></a> | 
+   <a href="#cap-irratsumprod"><strong>irratsumprod</strong></a> | 
+   <a href="#cap-irrdense"><strong>irrdense</strong></a> | 
+   <a href="#cap-lemma-55"><strong>lemma-55</strong></a> | 
+   <a href="#cap-liminf_limsup"><strong>liminf_limsup</strong></a> | 
+   <a href="#cap-limit-unique"><strong>limit-unique</strong></a> | 
+   <a href="#cap-mon1"><strong>mon1</strong></a> | 
+   <a href="#cap-mondiv"><strong>mondiv</strong></a> | 
+   <a href="#cap-monsub"><strong>monsub</strong></a> | 
+   <a href="#cap-nestedint"><strong>nestedint</strong></a> | 
+   <a href="#cap-non-negative"><strong>non-negative</strong></a> | 
+   <a href="#cap-prat"><strong>prat</strong></a> | 
+   <a href="#cap-proposition-36"><strong>proposition-36</strong></a> | 
+   <a href="#cap-proposition-37"><strong>proposition-37</strong></a> | 
+   <a href="#cap-proposition-38"><strong>proposition-38</strong></a> | 
+   <a href="#cap-proposition-6"><strong>proposition-6</strong></a> | 
+   <a href="#cap-proposition-8"><strong>proposition-8</strong></a> | 
+   <a href="#cap-rat"><strong>rat</strong></a> | 
+   <a href="#cap-remark-1"><strong>remark-1</strong></a> | 
+   <a href="#cap-remark-15"><strong>remark-15</strong></a> | 
+   <a href="#cap-remark-21"><strong>remark-21</strong></a> | 
+   <a href="#cap-remark-22"><strong>remark-22</strong></a> | 
+   <a href="#cap-remark-44"><strong>remark-44</strong></a> | 
+   <a href="#cap-remark-5"><strong>remark-5</strong></a> | 
+   <a href="#cap-remark-58"><strong>remark-58</strong></a> | 
+   <a href="#cap-remark-7"><strong>remark-7</strong></a> | 
+   <a href="#cap-remark-8"><strong>remark-8</strong></a> | 
+   <a href="#cap-root2"><strong>root2</strong></a> | 
+   <a href="#cap-subseqconv"><strong>subseqconv</strong></a> | 
+   <a href="#cap-subsfrench"><strong>subsfrench</strong></a> | 
+   <a href="#cap-sup"><strong>sup</strong></a> | 
+   <a href="#cap-sw"><strong>sw</strong></a> | 
+   <a href="#cap-tailofseries"><strong>tailofseries</strong></a> | 
+   <a href="#cap-theorem-12"><strong>theorem-12</strong></a> | 
+   <a href="#cap-theorem-18"><strong>theorem-18</strong></a> | 
+   <a href="#cap-theorem-37"><strong>theorem-37</strong></a> | 
+   <a href="#cap-theorem-44"><strong>theorem-44</strong></a> | 
+   <a href="#cap-theorem-45"><strong>theorem-45</strong></a>
+   </div>
+
+   <table class="indextable modindextable">
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-AOL"><td></td><td>
+       <strong>AOL</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#AOL"><code class="xref">AOL</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-AlgebraSeries"><td></td><td>
+       <strong>AlgebraSeries</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#AlgebraSeries"><code class="xref">AlgebraSeries</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-AlternatingTest"><td></td><td>
+       <strong>AlternatingTest</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#AlternatingTest"><code class="xref">AlternatingTest</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-Arch"><td></td><td>
+       <strong>Arch</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#Arch"><code class="xref">Arch</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-BW"><td></td><td>
+       <strong>BW</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#BW"><code class="xref">BW</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-CauchyCondensation"><td></td><td>
+       <strong>CauchyCondensation</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#CauchyCondensation"><code class="xref">CauchyCondensation</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-CauchySeries"><td></td><td>
+       <strong>CauchySeries</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#CauchySeries"><code class="xref">CauchySeries</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-Cauchyconvsubseq"><td></td><td>
+       <strong>Cauchyconvsubseq</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#Cauchyconvsubseq"><code class="xref">Cauchyconvsubseq</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-ClosedSetProposition"><td></td><td>
+       <strong>ClosedSetProposition</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#ClosedSetProposition"><code class="xref">ClosedSetProposition</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-Dirichlet"><td></td><td>
+       <strong>Dirichlet</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#Dirichlet"><code class="xref">Dirichlet</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-IntegralTest"><td></td><td>
+       <strong>IntegralTest</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#IntegralTest"><code class="xref">IntegralTest</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-IntegralTest0}"><td></td><td>
+       <strong>IntegralTest0}</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#IntegralTest0}"><code class="xref">IntegralTest0}</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-LimitTest"><td></td><td>
+       <strong>LimitTest</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#LimitTest"><code class="xref">LimitTest</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-Nirat"><td></td><td>
+       <strong>Nirat</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#Nirat"><code class="xref">Nirat</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-OLT"><td></td><td>
+       <strong>OLT</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#OLT"><code class="xref">OLT</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-OpenClosedComplementTheorem"><td></td><td>
+       <strong>OpenClosedComplementTheorem</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#OpenClosedComplementTheorem"><code class="xref">OpenClosedComplementTheorem</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-OpenSetProposition"><td></td><td>
+       <strong>OpenSetProposition</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#OpenSetProposition"><code class="xref">OpenSetProposition</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-RatioTest0"><td></td><td>
+       <strong>RatioTest0</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#RatioTest0"><code class="xref">RatioTest0</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-RootTest"><td></td><td>
+       <strong>RootTest</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#RootTest"><code class="xref">RootTest</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-absoluteimpliesstandard"><td></td><td>
+       <strong>absoluteimpliesstandard</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#absoluteimpliesstandard"><code class="xref">absoluteimpliesstandard</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-aton0"><td></td><td>
+       <strong>aton0</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#aton0"><code class="xref">aton0</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-axiomofcompleteness"><td></td><td>
+       <strong>axiomofcompleteness</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#axiomofcompleteness"><code class="xref">axiomofcompleteness</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>axiom</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-axiomofcompletenessforR"><td></td><td>
+       <strong>axiomofcompletenessforR</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#axiomofcompletenessforR"><code class="xref">axiomofcompletenessforR</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>axiom</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-charproinf"><td></td><td>
+       <strong>charproinf</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#charproinf"><code class="xref">charproinf</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>lemma</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-charpropsup"><td></td><td>
+       <strong>charpropsup</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#charpropsup"><code class="xref">charpropsup</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>lemma</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-closedclosed"><td></td><td>
+       <strong>closedclosed</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#closedclosed"><code class="xref">closedclosed</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>lemma</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-closedincompleteiscomplete"><td></td><td>
+       <strong>closedincompleteiscomplete</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#closedincompleteiscomplete"><code class="xref">closedincompleteiscomplete</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-comparison test"><td></td><td>
+       <strong>comparison test</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#comparison test"><code class="xref">comparison test</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-completeclosed"><td></td><td>
+       <strong>completeclosed</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#completeclosed"><code class="xref">completeclosed</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-completeness"><td></td><td>
+       <strong>completeness</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#completeness"><code class="xref">completeness</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-convCauchy_bnd"><td></td><td>
+       <strong>convCauchy_bnd</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#convCauchy_bnd"><code class="xref">convCauchy_bnd</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-convbnd"><td></td><td>
+       <strong>convbnd</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#convbnd"><code class="xref">convbnd</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-converge-to-1"><td></td><td>
+       <strong>converge-to-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#converge-to-1"><code class="xref">converge-to-1</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-convergenceepsiN"><td></td><td>
+       <strong>convergenceepsiN</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#convergenceepsiN"><code class="xref">convergenceepsiN</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-convergencetopological"><td></td><td>
+       <strong>convergencetopological</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#convergencetopological"><code class="xref">convergencetopological</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-corollary-36"><td></td><td>
+       <strong>corollary-36</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#corollary-36"><code class="xref">corollary-36</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>corollary</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-cortri"><td></td><td>
+       <strong>cortri</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#cortri"><code class="xref">cortri</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-countability"><td></td><td>
+       <strong>countability</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#countability"><code class="xref">countability</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-cs"><td></td><td>
+       <strong>cs</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#cs"><code class="xref">cs</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-defCauchy2"><td></td><td>
+       <strong>defCauchy2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#defCauchy2"><code class="xref">defCauchy2</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-defclosed"><td></td><td>
+       <strong>defclosed</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#defclosed"><code class="xref">defclosed</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-0"><td></td><td>
+       <strong>definition-0</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#definition-0"><code class="xref">definition-0</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-11"><td></td><td>
+       <strong>definition-11</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#definition-11"><code class="xref">definition-11</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-15"><td></td><td>
+       <strong>definition-15</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#definition-15"><code class="xref">definition-15</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-16"><td></td><td>
+       <strong>definition-16</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#definition-16"><code class="xref">definition-16</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-23"><td></td><td>
+       <strong>definition-23</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#definition-23"><code class="xref">definition-23</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-29"><td></td><td>
+       <strong>definition-29</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#definition-29"><code class="xref">definition-29</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-33"><td></td><td>
+       <strong>definition-33</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#definition-33"><code class="xref">definition-33</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-39"><td></td><td>
+       <strong>definition-39</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#definition-39"><code class="xref">definition-39</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-43"><td></td><td>
+       <strong>definition-43</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#definition-43"><code class="xref">definition-43</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-53"><td></td><td>
+       <strong>definition-53</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#definition-53"><code class="xref">definition-53</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-definition-7"><td></td><td>
+       <strong>definition-7</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#definition-7"><code class="xref">definition-7</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-defnopen"><td></td><td>
+       <strong>defnopen</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#defnopen"><code class="xref">defnopen</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-divergencecriterion"><td></td><td>
+       <strong>divergencecriterion</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#divergencecriterion"><code class="xref">divergencecriterion</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-epsinbhd"><td></td><td>
+       <strong>epsinbhd</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#epsinbhd"><code class="xref">epsinbhd</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-0"><td></td><td>
+       <strong>example-0</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-0"><code class="xref">example-0</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-12"><td></td><td>
+       <strong>example-12</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-12"><code class="xref">example-12</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-13"><td></td><td>
+       <strong>example-13</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-13"><code class="xref">example-13</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-14"><td></td><td>
+       <strong>example-14</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-14"><code class="xref">example-14</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-15"><td></td><td>
+       <strong>example-15</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#example-15"><code class="xref">example-15</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-16"><td></td><td>
+       <strong>example-16</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-16"><code class="xref">example-16</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-17"><td></td><td>
+       <strong>example-17</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-17"><code class="xref">example-17</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-18"><td></td><td>
+       <strong>example-18</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-18"><code class="xref">example-18</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-19"><td></td><td>
+       <strong>example-19</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-19"><code class="xref">example-19</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-2"><td></td><td>
+       <strong>example-2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-2"><code class="xref">example-2</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-21"><td></td><td>
+       <strong>example-21</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-21"><code class="xref">example-21</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-22"><td></td><td>
+       <strong>example-22</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-22"><code class="xref">example-22</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-23"><td></td><td>
+       <strong>example-23</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-23"><code class="xref">example-23</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-25"><td></td><td>
+       <strong>example-25</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-25"><code class="xref">example-25</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-26"><td></td><td>
+       <strong>example-26</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-26"><code class="xref">example-26</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-27"><td></td><td>
+       <strong>example-27</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-27"><code class="xref">example-27</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-28"><td></td><td>
+       <strong>example-28</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-28"><code class="xref">example-28</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-3"><td></td><td>
+       <strong>example-3</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-3"><code class="xref">example-3</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-30"><td></td><td>
+       <strong>example-30</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-30"><code class="xref">example-30</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-32"><td></td><td>
+       <strong>example-32</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-32"><code class="xref">example-32</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-35"><td></td><td>
+       <strong>example-35</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-35"><code class="xref">example-35</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-38"><td></td><td>
+       <strong>example-38</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-38"><code class="xref">example-38</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-39"><td></td><td>
+       <strong>example-39</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-39"><code class="xref">example-39</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-41"><td></td><td>
+       <strong>example-41</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-41"><code class="xref">example-41</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-42"><td></td><td>
+       <strong>example-42</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-42"><code class="xref">example-42</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-49"><td></td><td>
+       <strong>example-49</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-49"><code class="xref">example-49</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-51"><td></td><td>
+       <strong>example-51</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-51"><code class="xref">example-51</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-52"><td></td><td>
+       <strong>example-52</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-52"><code class="xref">example-52</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-56"><td></td><td>
+       <strong>example-56</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#example-56"><code class="xref">example-56</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-8"><td></td><td>
+       <strong>example-8</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-8"><code class="xref">example-8</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-example-9"><td></td><td>
+       <strong>example-9</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#example-9"><code class="xref">example-9</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-firstproof"><td></td><td>
+       <strong>firstproof</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter1_Introduction.html#firstproof"><code class="xref">firstproof</code></a> <em>(chapter1_Introduction)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-harmonic"><td></td><td>
+       <strong>harmonic</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#harmonic"><code class="xref">harmonic</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>example</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-infirrat"><td></td><td>
+       <strong>infirrat</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#infirrat"><code class="xref">infirrat</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-irratsumprod"><td></td><td>
+       <strong>irratsumprod</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#irratsumprod"><code class="xref">irratsumprod</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-irrdense"><td></td><td>
+       <strong>irrdense</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#irrdense"><code class="xref">irrdense</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>corollary</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-lemma-55"><td></td><td>
+       <strong>lemma-55</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#lemma-55"><code class="xref">lemma-55</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>lemma</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-liminf_limsup"><td></td><td>
+       <strong>liminf_limsup</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#liminf_limsup"><code class="xref">liminf_limsup</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-limit-unique"><td></td><td>
+       <strong>limit-unique</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#limit-unique"><code class="xref">limit-unique</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-mon1"><td></td><td>
+       <strong>mon1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#mon1"><code class="xref">mon1</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-mondiv"><td></td><td>
+       <strong>mondiv</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#mondiv"><code class="xref">mondiv</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>corollary</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-monsub"><td></td><td>
+       <strong>monsub</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#monsub"><code class="xref">monsub</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-nestedint"><td></td><td>
+       <strong>nestedint</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#nestedint"><code class="xref">nestedint</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-non-negative"><td></td><td>
+       <strong>non-negative</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#non-negative"><code class="xref">non-negative</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-prat"><td></td><td>
+       <strong>prat</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#prat"><code class="xref">prat</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-proposition-36"><td></td><td>
+       <strong>proposition-36</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#proposition-36"><code class="xref">proposition-36</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-proposition-37"><td></td><td>
+       <strong>proposition-37</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#proposition-37"><code class="xref">proposition-37</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-proposition-38"><td></td><td>
+       <strong>proposition-38</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#proposition-38"><code class="xref">proposition-38</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-proposition-6"><td></td><td>
+       <strong>proposition-6</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#proposition-6"><code class="xref">proposition-6</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-proposition-8"><td></td><td>
+       <strong>proposition-8</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#proposition-8"><code class="xref">proposition-8</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-rat"><td></td><td>
+       <strong>rat</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#rat"><code class="xref">rat</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-1"><td></td><td>
+       <strong>remark-1</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#remark-1"><code class="xref">remark-1</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-15"><td></td><td>
+       <strong>remark-15</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#remark-15"><code class="xref">remark-15</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-21"><td></td><td>
+       <strong>remark-21</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#remark-21"><code class="xref">remark-21</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-22"><td></td><td>
+       <strong>remark-22</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#remark-22"><code class="xref">remark-22</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-44"><td></td><td>
+       <strong>remark-44</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#remark-44"><code class="xref">remark-44</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-5"><td></td><td>
+       <strong>remark-5</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#remark-5"><code class="xref">remark-5</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-58"><td></td><td>
+       <strong>remark-58</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#remark-58"><code class="xref">remark-58</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-7"><td></td><td>
+       <strong>remark-7</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#remark-7"><code class="xref">remark-7</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-remark-8"><td></td><td>
+       <strong>remark-8</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#remark-8"><code class="xref">remark-8</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>remark</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-root2"><td></td><td>
+       <strong>root2</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#root2"><code class="xref">root2</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-subseqconv"><td></td><td>
+       <strong>subseqconv</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#subseqconv"><code class="xref">subseqconv</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-subsfrench"><td></td><td>
+       <strong>subsfrench</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#subsfrench"><code class="xref">subsfrench</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-sup"><td></td><td>
+       <strong>sup</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#sup"><code class="xref">sup</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>definition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-sw"><td></td><td>
+       <strong>sw</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter3_Sequences.html#sw"><code class="xref">sw</code></a> <em>(chapter3_Sequences)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-tailofseries"><td></td><td>
+       <strong>tailofseries</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#tailofseries"><code class="xref">tailofseries</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>proposition</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-12"><td></td><td>
+       <strong>theorem-12</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#theorem-12"><code class="xref">theorem-12</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-18"><td></td><td>
+       <strong>theorem-18</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter2_TheRealNumbers.html#theorem-18"><code class="xref">theorem-18</code></a> <em>(chapter2_TheRealNumbers)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-37"><td></td><td>
+       <strong>theorem-37</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#theorem-37"><code class="xref">theorem-37</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-44"><td></td><td>
+       <strong>theorem-44</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#theorem-44"><code class="xref">theorem-44</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
+     <tr class="cap" id="cap-theorem-45"><td></td><td>
+       <strong>theorem-45</strong></td><td></td></tr>
+     <tr>
+       <td></td>
+       <td>
+       <a href="chapter4_Series.html#theorem-45"><code class="xref">theorem-45</code></a> <em>(chapter4_Series)</em></td><td>
+       <em>theorem</em></td></tr>
+   </table>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dimitrios Roxanas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

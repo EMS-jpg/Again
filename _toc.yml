@@ -1,0 +1,14 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: someNotation
+- file: disclaimer
+- file: chapter1_Introduction
+- file: chapter2_TheRealNumbers
+- file: chapter3_Sequences
+- file: chapter4_Series
+- file: chapter5_WhatsNext
+- file: bibliography

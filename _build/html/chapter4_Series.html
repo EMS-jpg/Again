@@ -1,0 +1,1625 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Chapter 4 Series &#8212; MAS 107 Semester 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter4_Series';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Chapter 5 What’s next?" href="chapter5_WhatsNext.html" />
+    <link rel="prev" title="Chapter 3 Sequences" href="chapter3_Sequences.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/UOS_logo.png" class="logo__image only-light" alt="MAS 107 Semester 2 - Home"/>
+    <script>document.write(`<img src="_static/UOS_logo.png" class="logo__image only-dark" alt="MAS 107 Semester 2 - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    MAS107 Foundations of Pure Mathematics Semester 2 An Introduction to Analysis
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="someNotation.html">Some Notation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disclaimer.html">Disclaimer and Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter1_Introduction.html">Chapter 1 Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2_TheRealNumbers.html">Chapter 2 The Real Numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3_Sequences.html">Chapter 3 Sequences</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chapter 4 Series</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter5_WhatsNext.html">Chapter 5 What’s next?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bibliography.html">Bibliography</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter4_Series.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chapter4_Series.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Chapter 4 Series</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">4.1 Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-covered-in-this-chapter">What’s covered in this chapter:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-of-infinite-series">4.2 Convergence of infinite series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-sums-of-infinite-series-easily-computable">Are sums of infinite series (easily) computable?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-the-above-approach">Comments on the above approach:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-of-convergent-series">4.2.1 Arithmetic of convergent series</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-and-divergence-tests-for-series">4.3 Convergence (and divergence) tests for series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-criteria-for-series-with-non-negative-terms">4.3.1 Convergence criteria for series with non-negative terms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-and-examples">Comments and examples:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comment">Comment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Comments</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#series-of-terms-with-arbitrary-signs">4.3.2 Series of terms with arbitrary signs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alternating-series-dirichlet-s-criterion">Alternating Series - Dirichlet’s criterion</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rearrangements-and-riemann-s-theorem">4.3.3 Rearrangements and Riemann’s Theorem*</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="chapter-4-series">
+<h1>Chapter 4 Series<a class="headerlink" href="#chapter-4-series" title="Permalink to this heading">#</a></h1>
+<section id="motivation">
+<h2>4.1 Motivation<a class="headerlink" href="#motivation" title="Permalink to this heading">#</a></h2>
+<p>Consider the infinite series</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} = 1 -\frac12 + \frac13 -\frac14 +\frac15 - \frac16 + \frac17 -\frac18+\cdots .\]</div>
+<p>If we naively begin adding from the left-hand side, we get a sequence of what are called <em>partial sums</em> <a class="footnote-reference brackets" href="#soon" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>. In other words, let <span class="math notranslate nohighlight">\(s_n\)</span> equal the sum of the first <span class="math notranslate nohighlight">\(n\)</span> terms of the series, so that <span class="math notranslate nohighlight">\(s_1 = 1, s_2 = 1/2, s_3 = 5/6, s_4 = 7/12,\)</span> and so on. One immediate observation is that the successive sums oscillate in a progressively narrower space. The odd sums decrease (<span class="math notranslate nohighlight">\(s_1 &gt; s_3 &gt; s_5 &gt; \cdots\)</span>) while the even sums increase (<span class="math notranslate nohighlight">\(s_2 &lt; s_4 &lt; s_6 &lt; \cdots\)</span>).</p>
+<a class="reference internal image-reference" href="../html/_images/alternating_mot.png"><img alt="A numberline between 0 and 1, with an arrow pointing to a spot and labeling it &quot;S is approximately equal to 0.69&quot;. There are also circles labeled s1, s2, ..., s6 on the numberline. Between 0 and 0.69 lie s2, s4, and s6. Between 0.69 and 1 lie s5 and s3. s1 lies exactly at 1." class="align-center" src="../html/_images/alternating_mot.png" style="width: 600px;" /></a>
+<p>It seems reasonable -and we will prove- that the sequence <span class="math notranslate nohighlight">\((s_n)\)</span> eventually hones in on a value, call it <span class="math notranslate nohighlight">\(S,\)</span> where the odd and even partial sums “meet”.</p>
+<div class="math notranslate nohighlight">
+\[ s_2 &lt; s_4 &lt; s_6 &lt; \cdots S \cdots &lt; s_5 &lt; s_3 &lt; s_1\]</div>
+<p>At this moment, we cannot compute <span class="math notranslate nohighlight">\(S\)</span> precisely, but we know it falls somewhere between <span class="math notranslate nohighlight">\(7/12\)</span> and <span class="math notranslate nohighlight">\(5/6.\)</span> Summing a few hundred terms suggests that <span class="math notranslate nohighlight">\(S \approx 0.69.\)</span> Whatever its value, there is now an overwhelming temptation to write</p>
+<div class="math notranslate nohighlight" id="equation-s-sum">
+<span class="eqno">(8)<a class="headerlink" href="#equation-s-sum" title="Permalink to this equation">#</a></span>\[\displaystyle S = 1 -\frac12 + \frac13 -\frac14 +\frac15 - \frac16 + \frac17 -\frac18+\cdots \quad\]</div>
+<p>meaning, perhaps, that if we could indeed add up all, infinitely many, of these
+numbers, then the sum would equal <span class="math notranslate nohighlight">\(S.\)</span> A more familiar example of an equation might be</p>
+<div class="math notranslate nohighlight">
+\[ 2  = 1 + \frac12 + \frac14 +\frac18 + \frac{1}{16} + \frac{1}{32} + \frac{1}{64}+\cdots \]</div>
+<p>the only difference being that in the second equation we have a more recognizable
+value for the sum (sum of a geometric series with ratio <span class="math notranslate nohighlight">\(1/2\)</span>).</p>
+<p>But now for the crux of the matter: The symbols <span class="math notranslate nohighlight">\(+, -,\)</span> and <span class="math notranslate nohighlight">\(=\)</span> in the preceding equations are deceptively familiar notions being used in a very unfamiliar way. The crucial question is whether or not properties of addition and equality that are well understood for <em>finite sums</em> remain valid when applied to infinite objects such as <a class="reference internal" href="#equation-s-sum">(8)</a>. The answer, as we are about to witness, is somewhat
+ambiguous.</p>
+<p>Treating <a class="reference internal" href="#equation-s-sum">(8)</a> in a standard algebraic way, let’s multiply through by <span class="math notranslate nohighlight">\(1/2\)</span> and add it back to equation <a class="reference internal" href="#equation-s-sum">(8)</a>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+\frac{1}{2} S&amp;= \hspace{1.67em}  \frac12 \hspace{1.9em} - \frac14 \hspace{2em} +  \frac16 \hspace{2.3em}- \frac18 +\hspace{2em} \frac{1}{10}  \hspace{2em} -\frac{1}{12} \hspace{0.5em} + \cdots \\
++S &amp;= 1 -\frac12 + \frac13 -\frac14 +\frac15 - \frac16 + \frac17 -\frac18+ \frac{1}{9} -\frac{1}{10} +\frac{1}{11}-\frac{1}{12} \hspace{0.45em}+\cdots \\
+&amp;\\
+\hline
+\end{split}\end{split}\]</div>
+<div class="math notranslate nohighlight" id="equation-s-sum-two-thirds">
+<span class="eqno">(9)<a class="headerlink" href="#equation-s-sum-two-thirds" title="Permalink to this equation">#</a></span>\[\frac{3}{2} S= 1 \hspace{1.67em}+ \frac{1}{3} -\frac12 +\frac15 \hspace{1.67em} + \frac17 - \frac14 + \frac19 \hspace{1.67em} + \frac{1}{11} - \frac16 + \frac{1}{13} + \cdots \quad \]</div>
+<p>Now, look carefully at the result. The sum in <a class="reference internal" href="#equation-s-sum-two-thirds">(9)</a> consists precisely of the same terms as those in the original <a class="reference internal" href="#equation-s-sum">(8)</a> only in a different order. Specifically, the series in <a class="reference internal" href="#equation-s-sum-two-thirds">(9)</a> is a rearrangement of <a class="reference internal" href="#equation-s-sum">(8)</a> where we list the first two positive terms <span class="math notranslate nohighlight">\(\left(1+\frac13 \right)\)</span>, followed by the first negative term <span class="math notranslate nohighlight">\(\left( -\frac12 \right),\)</span> followed by the next two positive terms <span class="math notranslate nohighlight">\(\left(\frac15+\frac17 \right),\)</span> and then the next negative term <span class="math notranslate nohighlight">\(\left( -\frac14 \right).\)</span> Continuing this, it is apparent that every term in <a class="reference internal" href="#equation-s-sum-two-thirds">(9)</a> appears in <a class="reference internal" href="#equation-s-sum">(8)</a> and vice versa. The rub comes when we realize that <a class="reference internal" href="#equation-s-sum-two-thirds">(9)</a> asserts that the sum of these rearranged, but otherwise unaltered, numbers is equal to <span class="math notranslate nohighlight">\(3/2\)</span> its original value. Indeed, adding a few hundred terms of <a class="reference internal" href="#equation-s-sum-two-thirds">(9)</a> produces partial sums in the neighbourhood of <span class="math notranslate nohighlight">\(1.03.\)</span> <strong>Addition, in this infinite setting, is not commutative!</strong></p>
+<p>Let’s look at a similar rearrangement of the series</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=0}^{\infty} \left( -\frac12 \right)^n.\]</div>
+<p>This series is geometric with first term <span class="math notranslate nohighlight">\(1\)</span> and common ratio <span class="math notranslate nohighlight">\(r = -1/2.\)</span> Using
+the formula <span class="math notranslate nohighlight">\(1/(1 - r)\)</span> for the sum of a geometric series, we get</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle 1 - \frac12 + \frac14 - \frac18 + \frac{1}{16} - \frac{1}{32} + \frac{1}{64} - \cdots = \displaystyle \frac{1}{1-\left( -\frac12 \right)} =\frac23.\]</div>
+<p>This time, some computational experimentation with the “two positives, one
+negative” rearrangement</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle 1 + \frac14  - \frac12 + \frac{1}{16}  + \frac{1}{64}  - \frac18 + \frac{1}{256} +  \frac{1}{1024} -  \frac{1}{32} + \cdots\]</div>
+<p>gives partial sums quite close to <span class="math notranslate nohighlight">\(2/3\)</span> (the sum of the first 30 terms, for instance,
+equals <span class="math notranslate nohighlight">\(0.666667,\)</span> i.e., more or less what we were “expecting”. What’s going on??? These two examples seem to suggest that infinite addition is commutative in some instances (the last case)  but not in others (like the one we started with, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}.\)</span>)</p>
+<p>It is the pathologies that give rise to the need for rigour. A satisfying resolution to the questions raised will require that we be absolutely precise about what we mean as we manipulate these infinite objects. It may seem that progress is slow at first, but that is because we do not want to fall into the trap of letting the biases of our intuition corrupt our arguments. Rigorous proofs are meant to be a check on intuition, and in the end we will see that they actually improve our mental picture of the mathematical infinite. As a final example, consider something as intuitively fundamental as the associative property of addition
+applied to the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (-1)^n.\)</span> Grouping the terms one way gives</p>
+<div class="math notranslate nohighlight">
+\[ (-1 +1) + (-1 +1) + (-1 +1) + (-1 +1) + \cdots = 0 + 0 + 0 + 0 +0 +\cdots =0,\]</div>
+<p>while grouping in another yields</p>
+<div class="math notranslate nohighlight">
+\[ -1 + (1-1) + + (1-1) + (1-1) + (1-1) +\cdots = -1 + 0 + 0 +0 +\cdots =-1!\]</div>
+<p>The moral of the story so far is that manipulations that are legitimate in <strong>finite</strong> settings do not always extend to ** infinite** settings. Deciding when they do and why they do not is one of the central themes of Analysis. Thankfully, it turns out that we have already done all the heavy lifting because the theory of “infinite summation” is based on the theory of limits of sequences!</p>
+<section id="what-s-covered-in-this-chapter">
+<h3>What’s covered in this chapter:<a class="headerlink" href="#what-s-covered-in-this-chapter" title="Permalink to this heading">#</a></h3>
+<p>Given a sequence <span class="math notranslate nohighlight">\((a_n)_{n \in \mathbb{N}}\)</span>, we can try to make sense of the sum of its terms, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=n_0}^\infty a_n,\)</span> starting from some <span class="math notranslate nohighlight">\(n_0 \in \mathbb{N}.\)</span> We call this infinite sum <strong>a series</strong>. We define such an infinite sum via a limit, when it exists. You have already seen and worked with series in MAS106, but without knowing the formal definition of limit. So now we will revisit this material in a more rigorous way.</p>
+</section>
+</section>
+<section id="convergence-of-infinite-series">
+<h2>4.2 Convergence of infinite series<a class="headerlink" href="#convergence-of-infinite-series" title="Permalink to this heading">#</a></h2>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 18 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a sequence of real numbers. An infinite series is a formal expression of the form</p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=1}^{\infty} a_n = a_1+ a_2 + a_3 + a_4 + a_5 + \cdots.\]</div>
+<p>We consider the associated sequence <span class="math notranslate nohighlight">\((s_n)\)</span> of <strong>partial sums</strong>, where</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle s_n =a_1+a_2 + \cdots + a_n. \]</div>
+<p>We say that the sequence <span class="math notranslate nohighlight">\((a_n)\)</span> is <strong>summable</strong> if the sequence <span class="math notranslate nohighlight">\((s_n)\)</span> of partial sums converges, and we will call this limit the <strong>sum</strong> of the infinite series.</p>
+</section>
+</div><div class="proof remark admonition" id="remark-1">
+<p class="admonition-title"><span class="caption-number">Remark 8 </span></p>
+<section class="remark-content" id="proof-content">
+<ol class="arabic simple">
+<li><p>The “summation” doesn’t have to start from <span class="math notranslate nohighlight">\(n=1\)</span>; any <span class="math notranslate nohighlight">\(n_0 \in \mathbb{N}\)</span> is fine and then the definition is</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\sum_{n=n_0}^{\infty} a_n =a_{n_0}+a_{n_0+1}+ a_{n_0+2} + a_{n_0+3} + a_{n_0+4} + a_{n_0+5} + \cdots.\]</div>
+<ol class="arabic simple" start="2">
+<li><p>What “formal expression” means here is simply that we can write down the infinite sum without worrying about whether it exists, i.e., whether we can associate to this “sum” the limit of its partial sums sequence. In other words, the limit of the partial sums may or may not exists, but we can always write down those symbols. When the limit doesn’t exist, this series is an object we simply can’t work with (in the sense that we can’t associate a “sum” to it, associativity/commutative/other natural properties do not hold when it comes to this series).</p></li>
+<li><p>Regarding the partial sums: This is the truncated infinite sum in the case where we kept the first <span class="math notranslate nohighlight">\(n\)</span> terms. And <span class="math notranslate nohighlight">\(n\)</span> varies. This means that we are looking at the following sequence:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\displaystyle s_1,s_2,s_3,s_4,s_5,cdots,\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+s_1&amp;= a_1\\
+s_2&amp;= a_1 + a_2\\
+s_3&amp;= a_1 + a_2 + a_3\\
+s_4&amp;= a_1 + a_2 + a_3 + a_4 \\
+s_5&amp;= a_1 + a_2 + a_3 + a_4 + a_5\\
+\vdots
+\end{split}
+\end{split}\]</div>
+</section>
+</div><p>You can think of the terms of the sequence, as the “sum of terms so far”.</p>
+<p>In the case where the limit of the sequence of partial sums exists, we write</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{n\rightarrow \infty} s_n = \sum_{n=1}^\infty a_n \]</div>
+<p>or more informally</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{n\rightarrow \infty} s_n = a_1 +a_2 +a_3 +\cdots \]</div>
+<p>If the sequence <span class="math notranslate nohighlight">\((a_n)\)</span> is summable, we also say the <em>series</em> <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> converges. This is less formal language than the above, as we are using <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> for both the sequence of sums, and the number it converges to (if any). However, it does not cause problems in practice.</p>
+<div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 24 </span></p>
+<section class="example-content" id="proof-content">
+<p>Consider the <em>geometric series</em></p>
+<div class="math notranslate nohighlight">
+\[ \sum_{n=0}^\infty ar^n \]</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(r\)</span> are fixed real numbers, with <span class="math notranslate nohighlight">\(a\neq 0\)</span>. For which <span class="math notranslate nohighlight">\(r\)</span> does this converge? And what is the limit in that case?</p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>There is a pretty well-known trick to find the sum of a geometric series, when <span class="math notranslate nohighlight">\(|r|&lt;1\)</span>, which involves finding a clean expression for the partial sums.</p>
+<p>Let <span class="math notranslate nohighlight">\(\displaystyle s_n = a + ar + ar^2 + ar^3 + \cdots + ar^n.\)</span> We will multiply this finite sum by the ratio <span class="math notranslate nohighlight">\(r\)</span></p>
+<p>to get <span class="math notranslate nohighlight">\(\displaystyle rs_n = ar + ar^2 + ar^3 + \cdots + ar^n + ar^{n+1},\)</span></p>
+<p>which we will subtract from <span class="math notranslate nohighlight">\(s_n:\)</span></p>
+<div class="math notranslate nohighlight">
+\[ (1-r) s_n = s_n - r s_n = a - ar^{n+1} = a \left( 1 - r^{n+1}\right).\]</div>
+<p>As <span class="math notranslate nohighlight">\(r\neq 1\)</span> we divide to get <span class="math notranslate nohighlight">\(\displaystyle s_n =a \cdot  \frac{1 - r^{n+1}}{1-r}.\)</span> Taking <span class="math notranslate nohighlight">\(n \to \infty\)</span> yields the claimed result.</p>
+<p>By the way, notice that when <span class="math notranslate nohighlight">\(r = 1\)</span> we have that</p>
+<div class="math notranslate nohighlight">
+\[s_n = a + a + \cdots + a = (n+1) a \xrightarrow{n \to \infty} \infty.\]</div>
+<p>The sequence of partial sums does not converge in the case of <span class="math notranslate nohighlight">\(r=-1\)</span> either:</p>
+<p>Indeed, repeating the steps from the convergent case, for every <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> we have:</p>
+<p><span class="math notranslate nohighlight">\(\displaystyle s_n =a \cdot  \frac{1 - r^{n+1}}{1-r} \underbrace{=}_{r=-1} a \cdot \frac{1 - (-1)^{n+1}}{2}\)</span></p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(n\)</span> is odd, i.e., <span class="math notranslate nohighlight">\(n=2k+1\)</span>, <span class="math notranslate nohighlight">\(s_{2k+1} = 0,\)</span> so <span class="math notranslate nohighlight">\(s_{2k+1} \to 0.\)</span></p></li>
+<li><p>If <span class="math notranslate nohighlight">\(n\)</span> even, i.e., <span class="math notranslate nohighlight">\(n=2k\)</span>, <span class="math notranslate nohighlight">\(s_{2k} = a,\)</span> so <span class="math notranslate nohighlight">\(s_{2k} \to a \neq 0.\)</span></p></li>
+</ul>
+<p>Therefore, <span class="math notranslate nohighlight">\((s_n)\)</span> does not converge, i.e., the series diverges.
+In summary, the series does not converge for <span class="math notranslate nohighlight">\(r= \pm 1.\)</span> We will soon see that it doesn’t converge for any <span class="math notranslate nohighlight">\(|r|&gt;1\)</span>.</p>
+<p>In summary, the geometric series converges precisely when <span class="math notranslate nohighlight">\(|r|&lt;1\)</span>, to the limit
+<span class="math notranslate nohighlight">\( \frac{a}{1-r}. \)</span></p>
+</div>
+<p>Note that here the geometric series is indexed so that it begins at <span class="math notranslate nohighlight">\(n=0\)</span> rather than <span class="math notranslate nohighlight">\(n=1\)</span>. The choice or starting index will affect the actual sum (when it exists) but it doesn’t have any bearing on whether the series converges or not. This is because the summability of the series is really about the existence of the limit of the sequence of partial sums, and we know that a finite number of terms at the “beginning” of the sequence play no role when it comes to finding its limit.</p>
+<section id="are-sums-of-infinite-series-easily-computable">
+<h3>Are sums of infinite series (easily) computable?<a class="headerlink" href="#are-sums-of-infinite-series-easily-computable" title="Permalink to this heading">#</a></h3>
+<p>Let me frank: out of all the series that are summable, it is only for a few that we can actually calculate the sum, i.e., the limit of the sequence of partial sums. Most of the time we will content ourselves with showing that the sum exists, and the best outcome we can hope usually is an upper/lower bound on the sum.</p>
+<p>However, there are a few -rather special cases- where the sum can be computed. Some of them are listed below (but we won’t really see much about that):</p>
+<ol class="arabic">
+<li><p>We have already seen the case of the geometric series; if you think about it, the reason we could find the sum is because we were able to derive an explicit expression for the <span class="math notranslate nohighlight">\(n\)</span>-th term of the sequence of partial sums, and then finding the limit of this sequence was routine. It turns out that the same phenomenon occurs in the case of</p></li>
+<li><p><em>“telescopic series”</em> where cancellation allow for a neat representation of the sequence of partial sums, having which makes finding the sum easy. We will see such examples in the tutorial. There are a few other cases where computing the sum is possible, which I will just mention because they won’t feature in our course, but it is useful to remember they exist. First something that you’ve seen before,</p></li>
+<li><p>Riemann Sums. By that I mean that you get a series which you observe that it corresponds to the Riemann Sum of an integral you can compute. So you compute it and that’s it. Nuff said.</p>
+<p>Last but not least, it turns out that there is yet another type of infinite series that is defined for all <span class="math notranslate nohighlight">\(x\)</span> in some subset <span class="math notranslate nohighlight">\(A \subset \mathbb{R}.\)</span> We call those “power series” and they look like</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=0}^{\infty} c_n (x-a)^n,\]</div>
+<p>for some <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(c_n, n \in \mathbb{N}.\)</span> You have already seen cases of that when you saw Maclaurin/Taylor Series. In certain cases, one can show that, for each <span class="math notranslate nohighlight">\(x_0 \in A,\)</span> for some set <span class="math notranslate nohighlight">\(A,\)</span> the corresponding numerical series, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=0}^{\infty} c_n (x_0-a)^n\)</span> converges to a number <span class="math notranslate nohighlight">\(f(x_0),\)</span> and putting all the <span class="math notranslate nohighlight">\(f(x)\)</span>’s together gives a recognizable function. For example <span class="math notranslate nohighlight">\(\displaystyle e^x = \sum_{n=0}^{\infty} \frac{1}{n!} x^n,\)</span> where you can think of <span class="math notranslate nohighlight">\(&quot;=&quot;\)</span> as “for each, fixed, <span class="math notranslate nohighlight">\(\displaystyle x_0 \in \mathbb{R}, \lim_{n \to \infty} \sum_{k=0}^{n} \frac{1}{k!} x_0^k = e^{x_0}\)</span>”.</p>
+</li>
+<li><p>One can exploit this in reverse, i.e., recognizing that a given <em>numerical</em> (i.e., no variable <span class="math notranslate nohighlight">\(x\)</span> in it) series must have come from a power series with a certain <span class="math notranslate nohighlight">\(x_0\)</span> plugged in. For example, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=0}^{\infty} \frac{(1/2)^{n}}{n!} = e^2.\)</span></p></li>
+</ol>
+<p>In all of these cases, one should first prove that the series converges, and only if it does, use one of the above methods to calculate the sum (when possible). The focus of the next section, which is really the heart of this chapter, is to deduce tests for the convergence of series.</p>
+<div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 25 </span></p>
+<section class="example-content" id="proof-content">
+<p>Consider</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}.\]</div>
+<p>is the series convergent?</p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Since the terms in the sum are all positive, the sequence of partial sums given by</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle s_k = 1 +\frac{1}{4} + +\frac{1}{9} + \cdots + \frac{1}{k^2}\]</div>
+<p>is increasing. The question is whether or not we can find some upper bound on <span class="math notranslate nohighlight">\((s_k)\)</span>, because if we do, we can simply invoke the Monotone Convergence Theorem, <a class="reference internal" href="chapter3_Sequences.html#mon1">Theorem 17</a>.</p>
+<p>To this end observe:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+s_k &amp;= 1 + \frac{1}{2\cdot 2} + \frac{1}{3 \cdot 3} + \frac{1}{4\cdot 4} + \cdots + \frac{1}{k\cdot k}\\
+&amp;&lt; 1 + \frac{1}{2\cdot 1} + \frac{1}{3 \cdot 2} + \frac{1}{4\cdot 3} + \cdots + \frac{1}{k\cdot (k-1)}\\
+&amp;= 1+ \left(1-\frac12 \right) + \left(\frac12-\frac13 \right) + \left(\frac13-\frac14 \right)+\cdots + \left(\frac{1}{k-1}-\frac1k \right) \\
+&amp;= 1 + 1 -\frac1k\\
+&amp;&lt;2.
+\end{split}\end{split}\]</div>
+<p>Thus, <span class="math notranslate nohighlight">\(2\)</span> is an upper bound for the sequence of partial sums, which as we already saw is increasing. So by <a class="reference internal" href="chapter3_Sequences.html#mon1">Theorem 17</a>, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> converges to some (for the moment unknown) limit less or equal to <span class="math notranslate nohighlight">\(2\)</span> (how do I know that the limit is less or equal to <span class="math notranslate nohighlight">\(2\)</span>? Have we seen any result that guarantees that?)</p>
+</div>
+<p>It turns out that there are many (and some are pretty sophisticated) methods to find this limit which turns out to be the rather surprising number <span class="math notranslate nohighlight">\(\displaystyle \frac{\pi^2}{6}.\)</span> Look up “the Basel problem” if you want to learn more about this.</p>
+</section>
+<section id="comments-on-the-above-approach">
+<h3>Comments on the above approach:<a class="headerlink" href="#comments-on-the-above-approach" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>OK, it clearly required a trick or two, which would be rather difficult to conjure without having seen something similar before. And now you have!</p></li>
+<li><p>Using partial fractions one can easily show that indeed, for any <span class="math notranslate nohighlight">\(k \in \mathbb{N}:\)</span> <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{k\cdot (k-1)}= \left(\frac{1}{k-1}-\frac1k \right)\)</span> (do this!)</p></li>
+<li><p>I chose this example for several reasons: (1) to show that one can prove that a series converges without finding its sum, (2) to show how the Monotone Convergence Theorem can be applied to show that an infinite series is summable, (3) (some other reasons that will only make sense after the next section so force yourself to come back to this comment and try to guess what I had in mind!), and (4) to demonstrate the idea that one would use for a case of “telescopic” sums. This was not quite what I described before, just because I only bounded <span class="math notranslate nohighlight">\(s_k\)</span> by something telescopic, rather than having equality, but the principle is the same. To be more clear, look at the sum we used in the second line: It was</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{2\cdot 1} + \frac{1}{3 \cdot 2} + \frac{1}{4\cdot 3} + \cdots + \frac{1}{n\cdot (n-1)},\]</div>
+<p>which also corresponds to the partial sums of the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{j=2}^{\infty} \frac{1}{j(j-1)}.\)</span> Ok, forget about the previous question and let’s see what we would do to prove that this new infinite series converges (and to also find its sum). As before, you would form the partial sums:</p>
+<div class="math notranslate nohighlight">
+\[d_n = \frac{1}{2\cdot 1} + \frac{1}{3 \cdot 2} + \frac{1}{4\cdot 3} + \cdots + \frac{1}{n\cdot (n-1)}.\]</div>
+<p>You would then use the partial fraction idea to rewrite as</p>
+<div class="math notranslate nohighlight">
+\[d_n = \left(1-\frac12 \right) + \left(\frac12-\frac13 \right) + \left(\frac13-\frac14 \right)+\cdots + \left(\frac{1}{n-1}-\frac1n \right) \]</div>
+<p>(I am allowed to group terms as I like because for a fixed <span class="math notranslate nohighlight">\(n\)</span> this is just a finite sum)</p>
+<p>But now stuff, A LOT of stuff, cancels out, and we are left with <span class="math notranslate nohighlight">\(\displaystyle d_n = 1 - \frac{1}{n}.\)</span> The limit exists and it’s <span class="math notranslate nohighlight">\(1\)</span> so we write <span class="math notranslate nohighlight">\(\displaystyle \sum_{j=2}^{\infty} \frac{1}{j(j-1)} = \lim_{n \to \infty} d_n = 1.\)</span></p>
+<p>I hope that this now makes more clear what I meant earlier by “cancellations occur in telescopic sums, hence finding an explicit expression for the partial sums is possible”. Of course, to use this idea, you need to first suspect and spot a telescopic sum. The most common clue that this is the case is when you have a sum with consecutive (or nearby) indices, especially on the denominator of the summand, e.g., like our <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{n\cdot (n-1)}\)</span>. Don’t expect to get all of this dramatic cancellation every time though! Sometimes more terms will survive but it will still be easy enough to pin the partial sums down explicitly.</p>
+</li>
+</ul>
+<p>We should not get complacent! Bad things (as in a series not being convergent) can and will happen. A prime example is the following:</p>
+<div class="proof example admonition" id="harmonic">
+<p class="admonition-title"><span class="caption-number">Example 26 </span> (The harmonic series diverges)</p>
+<section class="example-content" id="proof-content">
+<p>Consider the <em>harmonic series</em></p>
+<div class="math notranslate nohighlight">
+\[\sum_{n=1}^{\infty} \frac1n.\]</div>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Again, we have an increasing sequence of partial sums, whose general term is given by</p>
+<div class="math notranslate nohighlight">
+\[s_m = 1+ \frac12 +  \frac13 + \cdots +  \frac1m.\]</div>
+<p>Based on our experience from the partial sums of the (convergent!) series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n},\)</span> nobody would blame us if we were to venture that the partial sums are also bounded. After all, in both cases, we are adding smaller and smaller number, and their decay (=how fast each new increment goes to <span class="math notranslate nohighlight">\(0\)</span>) is fast (which means that the rate at which the sum grows is pretty slow). And yet…</p>
+<p>First notice that <span class="math notranslate nohighlight">\(2\)</span> is no longer an upper bound. Indeed,</p>
+<div class="math notranslate nohighlight">
+\[s_4 = 1 + \frac12 + \left( \frac13 + \frac14\right) &gt; 1 + \frac12 + \left( \frac14 + \frac14\right) =2,\]</div>
+<p>and since the sequence is (strictly) increasing, for all <span class="math notranslate nohighlight">\(n\geq 4\)</span> we immediately see that</p>
+<div class="math notranslate nohighlight">
+\[s_n &gt; s_4 &gt; 2.\]</div>
+<p>But still that’s not enough reason to despair, maybe there is an upper bound but we have to search for it among numbers above <span class="math notranslate nohighlight">\(2.\)</span> I applaud your optimism (and hold on to that!) but your efforts are doomed to fail. The reason is cute and slick at the same time, and it also generalises pretty nicely (we will see that in the next section). The gist of the next argument is the following: the series is convergent if the limit of the sequence of partial sums exists (as a real number). If there is a subsequence of this sequence that diverges, or two subsequences with different limits, then the sequence of partial sums diverges and the series is not summable. Indeed, we will find a subsequence which is unbounded, hence divergent by <a class="reference internal" href="chapter3_Sequences.html#convbnd">Theorem 13</a>.</p>
+<p>Consider the subsequence (in the sequence of partial sums) corresponding to <span class="math notranslate nohighlight">\(n_k=2^k, k \in \mathbb{N}:\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+s_{2^k}&amp;= 1 + \frac12 + \left( \frac13 + \frac14\right) + \left( \frac15 +\cdots + \frac18\right)+\cdots+\left( \frac{1}{2^{k-1}+1}+ \cdots + \frac{1}{2^k}\right)\\
+&amp;&gt; 1 + \frac12 + \left( \frac14 + \frac14\right) + \left( \frac18 +\cdots + \frac18\right)+\cdots+\left( \frac{1}{2^{k}}+ \cdots + \frac{1}{2^k}\right) \\
+&amp;=  1 + \frac12 + 2\left(\frac{1}{4}\right) + 4 \left(\frac{1}{8}\right)+\cdots + 2^{k-1} \left(\frac{1}{2^k}\right)  \\
+&amp;=   1 + \frac12 + \frac12 + \frac12 +\cdots + \frac12\\
+&amp;= 1 + k \left(\frac{1}{2}\right), 
+\end{split}\end{split}\]</div>
+<p>which is unbounded <a class="footnote-reference brackets" href="#suprised" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>. Again, convergent sequences are always bounded, so the subsequence diverges, which means the sequence of the partial sums diverges, which means the series is not summable.</p>
+</div>
+<p>It should be clear now that we need ways (tests) to check whether a given series is summable or not. But let’s postpone the issue for the moment and let’s first see what we results we can deduce on the arithmetic of infinite <strong>summable</strong> series.</p>
+</section>
+<section id="arithmetic-of-convergent-series">
+<h3>4.2.1 Arithmetic of convergent series<a class="headerlink" href="#arithmetic-of-convergent-series" title="Permalink to this heading">#</a></h3>
+<p>Given an infinite series  <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k\)</span> it is important to keep a clear distinction
+between</p>
+<ol class="arabic simple">
+<li><p>the sequence of terms: <span class="math notranslate nohighlight">\((a_1, a_2, a_3,cdots)\)</span> and</p></li>
+<li><p>the sequence of partial sums: <span class="math notranslate nohighlight">\((s_1, s_2, s_3,cdots),\)</span> where <span class="math notranslate nohighlight">\(s_n = a_1+a_2+\cdots+ a_n.\)</span></p></li>
+</ol>
+<p>The convergence of the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k\)</span>  is defined in terms of the sequence <span class="math notranslate nohighlight">\((s_n).\)</span></p>
+<p>Specifically, the statement</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{k=1}^{\infty} a_k =A, \quad \text{means that} \quad \lim_{n \to \infty} s_n = A.\]</div>
+<p>It is for this reason that we can immediately translate many of our results from
+the study of sequences into statements about the behaviour of infinite series.</p>
+<div class="proof theorem admonition" id="AlgebraSeries">
+<p class="admonition-title"><span class="caption-number">Theorem 24 </span> (Algebraic Limit Theorem for Series)</p>
+<section class="theorem-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k =A\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} b_k = B,\)</span> then</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} c a_k = cA\)</span> for all <span class="math notranslate nohighlight">\(c\in \mathbb{R}\)</span> and</p></li>
+<li><p><span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} ( a_k + b_k ) =A +B.\)</span></p></li>
+</ol>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. 1.  In order to show that <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} c a_k = cA\)</span> we must argue that the sequence of partial sums</p>
+<div class="math notranslate nohighlight">
+\[t_m = c a_1 + c a_2 + c a_3 + \cdots + c a_m\]</div>
+<p>converges to <span class="math notranslate nohighlight">\(c A.\)</span> But we are given that <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k\)</span> converges to <span class="math notranslate nohighlight">\(A,\)</span> meaning that the sequence of partial sums</p>
+<div class="math notranslate nohighlight">
+\[s_m = a_1 + a_2 + a_3 + \cdots + a_m\]</div>
+<p>converges to <span class="math notranslate nohighlight">\(A.\)</span> Because <span class="math notranslate nohighlight">\(t_m = c s_m,\)</span> applying the Algebraic Limit Theorem for sequences (<a class="reference internal" href="chapter3_Sequences.html#AOL">Theorem 14</a>) yields <span class="math notranslate nohighlight">\(t_m \to cA,\)</span> as desired.</p>
+<ol class="arabic simple" start="2">
+<li><p>That’s an easy exercise for you. <em>Hint:</em> You will again need to invoke <a class="reference internal" href="chapter3_Sequences.html#AOL">Theorem 14</a>.</p></li>
+</ol>
+</div>
+<p>One way to summarise <a class="reference internal" href="#AlgebraSeries">Theorem 24</a> is to say that infinite addition still satisfies the distributive property. Part <span class="math notranslate nohighlight">\((2)\)</span> verifies that summable series can be added in the usual way. Missing from this theorem is any statement about the product of two infinite series. At the heart of this question is the issue of commutativity, which requires a more delicate analysis that we won’t have time to examine carefully. If you are interested, I encourage you to check out Section 2.8 of the book <span id="id3">[<a class="reference internal" href="bibliography.html#id2" title="Abbott S. Understanding Analysis. Springer;, 2015.">S15</a>]</span>.</p>
+</section>
+</section>
+<section id="convergence-and-divergence-tests-for-series">
+<h2>4.3 Convergence (and divergence) tests for series<a class="headerlink" href="#convergence-and-divergence-tests-for-series" title="Permalink to this heading">#</a></h2>
+<p>We will start this discussion with a divergence criterion. I chose to do this because (1) I want you to remember this, and (2) while the proof is very easy, it still highlights the fact that all such (convergence/divergence) proofs go through the sequence of partial sums.</p>
+<div class="proof proposition admonition" id="divergencecriterion">
+<p class="admonition-title"><span class="caption-number">Proposition 14 </span> (Divergence Criterion)</p>
+<section class="proposition-content" id="proof-content">
+<p>Suppose the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> converges. Then <span class="math notranslate nohighlight">\(a_n\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>.</p>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> converges, say to <span class="math notranslate nohighlight">\(A\)</span>, so the sequence, <span class="math notranslate nohighlight">\((s_n),\)</span> of partial sums converges to <span class="math notranslate nohighlight">\(A.\)</span> Observe that</p>
+<div class="math notranslate nohighlight">
+\[a_n = s_{n} -s_{n-1} \xrightarrow{n\to \infty} A - A = 0 \quad \text{(Why?)}\]</div>
+</div>
+<div class="proof remark admonition" id="remark-7">
+<p class="admonition-title"><span class="caption-number">Remark 9 </span></p>
+<section class="remark-content" id="proof-content">
+<ul>
+<li><p>The name is of my own devising (I think?), you may not see that elsewhere. You should ask why on earth do I call this a “divergence criterion”; after all what’s mentioned is a converging series and a convergent sequence! What exactly diverges?</p>
+<p>This is a <strong>necessary</strong> condition for convergence/summability of series. It says that if a series converges, then the sequence being summed (the <span class="math notranslate nohighlight">\(a_n\)</span>’s, NOT the sequence of partial sums) has to be decaying to zero. This does <strong>not</strong> mean that, if <span class="math notranslate nohighlight">\(a_n \to 0\)</span>, then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> converges. We have seen a counterexample as a matter of fact: The <em>harmonic series</em> <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n}\)</span> does not converge, yet <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{n}\rightarrow 0\)</span> as <span class="math notranslate nohighlight">\(n\rightarrow \infty\)</span>. So the converse is not true and this condition is not <em>sufficient</em> for convergence.</p>
+</li>
+<li><p>I hope that the more you think about it, the less surprising this result should sound. The proof is particularly illuminating: Observe that <span class="math notranslate nohighlight">\(a_n = s_{n} - s_{n-1}\)</span> so if <span class="math notranslate nohighlight">\(a_n \not \to 0,\)</span> but say to some <span class="math notranslate nohighlight">\(\delta \neq 0\)</span> instead, the sequence of partial sums is not Cauchy (so it can’t converge, so the series is not summable)<a class="footnote-reference brackets" href="#notcauchy" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>.</p>
+<p>This basically says that for the series to have any hope of converging, the numbers getting added (the new <span class="math notranslate nohighlight">\(a_n\)</span>’s) to the sum so far, better get very small and stay very small (again, this doesn’t have to be the case for all terms of <span class="math notranslate nohighlight">\(a_n\)</span>, but it has to <em>eventually be true</em>). Otherwise, the sequence of partial sums will fail to be bounded and will diverge. So convergence of the series is tied to (the necessary) fast decay of the <span class="math notranslate nohighlight">\(a_n\)</span>’s to <span class="math notranslate nohighlight">\(0.\)</span> There is of course a caveat to this qualitative description: there are sequences after all that go to <span class="math notranslate nohighlight">\(0\)</span> and the corresponding series diverges, as we have seen in the case of the harmonic series. The rule of thumb is that the sequence <span class="math notranslate nohighlight">\((a_n)\)</span>’d better decay to <span class="math notranslate nohighlight">\(0\)</span> faster than <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{n^{1+\epsilon}},\)</span> for any <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span> We will be precise soon.</p>
+</li>
+</ul>
+</section>
+</div><div class="proof example admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 27 </span> (An application)</p>
+<section class="example-content" id="proof-content">
+<p>Show that the series</p>
+<div class="math notranslate nohighlight">
+\[ \sum_{n=1}^\infty  \frac{n}{n+2} \]</div>
+<p>does not converge.</p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Observe that <span class="math notranslate nohighlight">\(\displaystyle  \lim_{n \to \infty} a_n = \lim_{n\rightarrow \infty} \frac{n}{n+2} = \lim_{n\rightarrow \infty} \frac{1}{1+ 2/n} =1 \neq 0. \)</span></p>
+<p>Therefore the series does not converge.</p>
+</div>
+<div class="proof example admonition" id="example-9">
+<p class="admonition-title"><span class="caption-number">Example 28 </span></p>
+<section class="example-content" id="proof-content">
+<p>The geometric series <span class="math notranslate nohighlight">\( \displaystyle \sum_{k=1}^{\infty} r^k\)</span> does not converge when <span class="math notranslate nohighlight">\(r= \pm 1.\)</span></p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Here we have <span class="math notranslate nohighlight">\(a_k = r^k.\)</span> When <span class="math notranslate nohighlight">\(r=1,\)</span> <span class="math notranslate nohighlight">\(a_k = 1^k \to 1 \neq 0.\)</span> When <span class="math notranslate nohighlight">\(r=-1, a_k = (-1)^k,\)</span> which doesn’t have a limit. In both cases the divergence criterion, <a class="reference internal" href="#divergencecriterion">Proposition 14</a>, asserts that the corresponding geometric series diverges.</p>
+<p>(Feel free to ignore the next result; I should however say that it compounds on the importance of the previous comment about how fast (eventual) decay of the terms of <span class="math notranslate nohighlight">\((a_n)\)</span> is tied to the convergence of the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span>.)</p>
+<p>If the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k\)</span> converges, we sometimes call <span class="math notranslate nohighlight">\(\displaystyle \lim_{n \to \infty} \sum_{k=n+1}^{\infty} a_k\)</span> the “tail” of the series. Notice that the series “splits” into the partial sums and the tail, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[ \displaystyle \sum_{k=1}^{\infty} a_k = \displaystyle \sum_{k=1}^{n} a_k + \sum_{k=n+1}^{\infty} a_k .\]</div>
+</div>
+<p>From our previous discussions we should expect the tail to go to <span class="math notranslate nohighlight">\(0.\)</span> This is indeed the case as the next result asserts:</p>
+<div class="proof proposition admonition" id="tailofseries">
+<p class="admonition-title"><span class="caption-number">Proposition 15 </span> (“Tails” of convergent series)</p>
+<section class="proposition-content" id="proof-content">
+<p>If the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges, we have that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \lim_{n \to \infty} \sum_{k=n+1}^{\infty} a_k = 0.\]</div>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. For <span class="math notranslate nohighlight">\(n,m \in \mathbb{N}\)</span> with <span class="math notranslate nohighlight">\(m&gt;n\)</span> we have that</p>
+<div class="math notranslate nohighlight">
+\[ \displaystyle \sum_{k=n+1}^{m} a_k = \sum_{k=1}^{m} a_k - \sum_{k=1}^{n} a_k.\]</div>
+<p>We fix an <span class="math notranslate nohighlight">\(n\)</span> and take the limit as <span class="math notranslate nohighlight">\(m \to \infty\)</span></p>
+<div class="math notranslate nohighlight">
+\[ \displaystyle \sum_{k=n+1}^{\infty} a_k = \sum_{k=1}^{\infty} a_k - \sum_{k=1}^{n} a_k.\]</div>
+<p>Now, we can take the limit as <span class="math notranslate nohighlight">\(n \to \infty\)</span> to get:</p>
+<div class="math notranslate nohighlight">
+\[ \displaystyle \lim_{n \to \infty} \sum_{k=n+1}^{\infty} a_k = \sum_{k=1}^{\infty} a_k - \sum_{k=1}^{\infty} a_k  = 0\]</div>
+<p>as desired.</p>
+</div>
+<p>(By the way, all the phenomena we have studied in this section have direct analogues in improper integrals of the form <span class="math notranslate nohighlight">\(\displaystyle \int_{c}^{\infty} f(x)dx, c \in \mathbb{R}\)</span>, but this is beyond what we have time to cover here.)</p>
+<p>I have repeatedly emphasized that the question of summability of infinite series is really a question about the convergence of its sequence of associated partial sums. Given that, and our previous discussions on convergence criteria for sequences, it shouldn’t be surprising that there is a Cauchy criterion for series.</p>
+<div class="proof theorem admonition" id="CauchySeries">
+<p class="admonition-title"><span class="caption-number">Theorem 25 </span> (Cauchy Criterion for Series)</p>
+<section class="theorem-content" id="proof-content">
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{k=1}^{\infty} a_k\)</span> converges <em>if and only if</em>, given <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span>there exists an <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> such that whenever <span class="math notranslate nohighlight">\(n&gt;m \geq N\)</span> it follows that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle | a_{m+1} + a_{m+2} + \cdots + a_n| &lt; \epsilon.\]</div>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. Call the sequence of partial sums <span class="math notranslate nohighlight">\((s_k),\)</span> and observe that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle |s_n - s_m| = |a_{m+1} + a_{m+2} + \cdots + a_n|\]</div>
+<p>and apply the Cauchy Criterion for sequences.</p>
+</div>
+<p>The applicability of the above as a convergence test is limited to mostly theoretical considerations, but, for the sake of demonstration, let’s use it to revisit our previous two examples, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{1}{n} \quad \text{and} \quad \sum_{n=1}^{\infty}\frac{1}{n^2}.\)</span></p>
+<div class="proof example admonition" id="example-12">
+<p class="admonition-title"><span class="caption-number">Example 29 </span></p>
+<section class="example-content" id="proof-content">
+<ol class="arabic simple">
+<li><p>The harmonic series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{1}{n}\)</span> does not converge. Indeed, if it converged, by the Cauchy criterion, <a class="reference internal" href="#CauchySeries">Theorem 25</a>, we would be able to find <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> such that for all <span class="math notranslate nohighlight">\(m&gt;n\geq N,\)</span> we would have</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{1}{n+1} + \frac{1}{n+2}+\cdots + \frac{1}{m} &lt; \frac{1}{2}.\]</div>
+<p>In particular, for <span class="math notranslate nohighlight">\(m=2n,\)</span></p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{1}{n+1} + \frac{1}{n+2}+\cdots + \frac{1}{n+n} &lt; \frac{1}{2}.\]</div>
+<p>However,</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{1}{n+1} + \frac{1}{n+2}+\cdots + \frac{1}{n+n} \geq \underbrace{\frac{1}{n+n}+\frac{1}{n+n}+\cdots+\frac{1}{n+n}}_{n \hspace{0.3em}\text{times}} = \frac{n}{2n}=\frac{1}{2},\]</div>
+<p>which is a contradiction. On the other hand,</p>
+<ol class="arabic simple" start="2">
+<li><p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{1}{n^2}\)</span> is summable. Let’s see how to use <a class="reference internal" href="#CauchySeries">Theorem 25</a> to prove this. It suffices to show that the sequence of partial sums is Cauchy. Let <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span> Choose <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{N} &lt; \epsilon\)</span> (so <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{n} &lt; \epsilon, \forall n\geq N\)</span>). Therefore, for all <span class="math notranslate nohighlight">\(n,m\in \mathbb{N},\)</span> such that <span class="math notranslate nohighlight">\(m&gt;n \geq N\)</span> we have</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{1}{(n+1)^2} + \frac{1}{(n+2)^2}+\cdots + \frac{1}{m^2} &lt;  \frac{1}{n(n+1)} + \frac{1}{(n+1)(n+2)}+\cdots + \frac{1}{(m-1)m} \]</div>
+<p>We’ve used this trick before; the latter is</p>
+<div class="math notranslate nohighlight">
+\[= \left(\frac{1}{n}-\frac{1}{n+1}\right)+\left(\frac{1}{n}-\frac{1}{n+1}\right) + \cdots + \left(\frac{1}{m-1}-\frac{1}{m}\right)= \frac{1}{n}-\frac{1}{m} &lt; \frac{1}{n} &lt; \epsilon.\]</div>
+<p>Therefore the series converges.</p>
+</section>
+</div><p>The Cauchy Criterion is however pretty useful as far as theory is concerned and it leads to economical proofs of several basic facts about series, especially readily-applicable convergence/divergence criteria.</p>
+<p>The remaining of this section deals with explicit criteria that can we use to check if a given series converges.</p>
+<p>A <strong>warning!</strong> <em>Most</em> of the results that we will see below are “one-directional”, by which I mean that we will be checking some condition, and if that condition is satisfied we will refer to the specific criterion and use it to assert that the given series converges. What they <em>don’t</em> guarantee (if/when they do I promise to spell it out) is that failure of the condition we are checking implies that the series diverges. If the criterion is not satisfied, the best we can say is “we cannot use this criterion to conclude anything about the convergence of the series”, i.e., it’s inconclusive. Sometimes we will be able to use a different criterion, and there are certain heuristics one can use to decide which criterion has a chance to give a definite answer <a class="footnote-reference brackets" href="#calculus" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
+<p>We will start by looking at infinite sums of positive terms before throwing negative terms in the mix. By the way, <em>it everything that we have discussed so far (divergence test, Cauchy test, geometric series) doesn’t require any assumption on the signs of terms.</em></p>
+<section id="convergence-criteria-for-series-with-non-negative-terms">
+<h3>4.3.1 Convergence criteria for series with non-negative terms<a class="headerlink" href="#convergence-criteria-for-series-with-non-negative-terms" title="Permalink to this heading">#</a></h3>
+<p>The first criterion is rather basic and with an easy proof. As you parse it, pay attention to where the assumption of non-negativity features.</p>
+<div class="proof theorem admonition" id="non-negative">
+<p class="admonition-title"><span class="caption-number">Theorem 26 </span></p>
+<section class="theorem-content" id="proof-content">
+<p>Consider the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n,\)</span> where <span class="math notranslate nohighlight">\(a_n \geq 0\)</span> for all <span class="math notranslate nohighlight">\(n \in \mathbb{N}.\)</span> Let <span class="math notranslate nohighlight">\((s_n)\)</span> be its associated sequence of partial sums. Then:</p>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\((s_n)\)</span> is bounded, then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> converges.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\((s_n)\)</span> is not bounded then, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n = + \infty.\)</span></p></li>
+</ol>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. 1.  Since <span class="math notranslate nohighlight">\(a_n \geq 0,\)</span> for all <span class="math notranslate nohighlight">\(n,\)</span> the sequence <span class="math notranslate nohighlight">\((s_n)\)</span> of partial sums is increasing. Therefore, if it’s also bounded, by  <a class="reference internal" href="chapter3_Sequences.html#mon1">the Monotone Convergence Theorem</a> , the sequence of partial sums converges (so the series is summable).
+2.  If <span class="math notranslate nohighlight">\((s_n)\)</span> is not bounded then it can’t be convergent (why?) so the series (being one of non-negative terms) diverges to <span class="math notranslate nohighlight">\(\displaystyle +\infty.\)</span></p>
+</div>
+<section id="comments">
+<h4>Comments:<a class="headerlink" href="#comments" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>I want to emphasize the non-negativity condition: if the series has both positive and negative terms (to be more precise, if it has infinitely many positive and negative terms) the above theorem is no longer true. Indeed, the partial sums of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (-1)^{n+1}\)</span> are bounded by <span class="math notranslate nohighlight">\(1\)</span> but the series diverges. How do I know that? I used the Divergence Test <a class="reference internal" href="#divergencecriterion">Proposition 14</a>, check yourselves!</p></li>
+<li><p>Notice that this is one of the rare cases where we have a criterion for both convergence and divergence: if the partial sums are bounded (only for series of non-negative terms though), the series is summable. If they are not, the series is not summable and there is no third option.</p></li>
+<li><p>Having said that, this is a criterion that is quite hard to use for applications. It can be useful if we can find a closed-form expression for the partial sums (as in the cases of geometric or telescopic series).</p></li>
+</ul>
+<p>Before you start complaining that I don’t show you applicable tests, the next one is likely <em>the</em> most useful. The proof is also not hard.</p>
+<div class="proof theorem admonition" id="comparison test">
+<p class="admonition-title"><span class="caption-number">Theorem 27 </span> (Comparison Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Consider the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n,\)</span> where <span class="math notranslate nohighlight">\(a_n, b_n \geq 0,\)</span> for all <span class="math notranslate nohighlight">\(n \in \mathbb{N}.\)</span></p>
+<p>Assume <span class="math notranslate nohighlight">\(a_n \leq b_n\)</span> for all <span class="math notranslate nohighlight">\(n \in \mathbb{N}.\)</span>
+The following hold:</p>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n\)</span> converges, then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> also converges.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> diverges, then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n\)</span> diverges too.</p></li>
+</ol>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. The proof is again about piecing together some of the same facts we’ve used so far and remembering definitions.</p>
+<ol class="arabic simple">
+<li><p>Let’s call <span class="math notranslate nohighlight">\((s_n),(t_n)\)</span> the sequences of the partial sums of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n, \sum_{n=1}^{\infty}b_n\)</span> respectively. Since, by assumption, <span class="math notranslate nohighlight">\(a_n \leq b_n, \forall n \in \mathbb{N},\)</span> we clearly have <span class="math notranslate nohighlight">\(s_n \leq t_n, \forall n \in \mathbb{N}.\)</span> But assuming <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n\)</span> converges is the same as saying that the sequence of the associated partial sums, <span class="math notranslate nohighlight">\((t_n)\)</span> converges, and by <a class="reference internal" href="chapter3_Sequences.html#convbnd">Theorem 13</a>, <span class="math notranslate nohighlight">\((t_n)\)</span> is bounded, say by some <span class="math notranslate nohighlight">\( \mathbb{R} \ni M &gt;0,\)</span> i.e., <span class="math notranslate nohighlight">\(t_n \leq M, \forall n \in \mathbb{N}.\)</span> Then <span class="math notranslate nohighlight">\(s_n \leq t_n \leq M, \forall n \in \mathbb{N},\)</span> but <span class="math notranslate nohighlight">\((s_n)\)</span> is also increasing (we are working with non-negative terms). By the <a class="reference internal" href="chapter3_Sequences.html#mon1">Monotone Convergence Theorem</a>, <span class="math notranslate nohighlight">\((s_n)\)</span> has a limit, meaning that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> converges.</p></li>
+<li><p>Now, if <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n\)</span> diverges, which is this case means (convince yourself!) that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_n = +\infty,\)</span> which by definition means <span class="math notranslate nohighlight">\(s_n \to +\infty.\)</span> But <span class="math notranslate nohighlight">\(t_n \geq s_n \to +\infty,\)</span> so <span class="math notranslate nohighlight">\(t_n \to \infty\)</span> (e.g., by a corollary of <a class="reference internal" href="chapter3_Sequences.html#mon1">Theorem 17</a>). Then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n\)</span> diverges too.</p></li>
+</ol>
+</div>
+<div class="proof admonition" id="proof">
+<p>Proof. <strong>Second proof</strong>: Let’s reprove part (1) using a different argument:</p>
+<p>Let
+<span class="math notranslate nohighlight">\( s_n =a_1 +\cdots +a_n, \qquad t_n = b_1 + \cdots +b_n. \)</span></p>
+<p>Since we are told that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}b_n\)</span> converges, the sequence of partial sums <span class="math notranslate nohighlight">\((t_n)\)</span> converges, so it is Cauchy.</p>
+<p>Let <span class="math notranslate nohighlight">\(\varepsilon  &gt;0\)</span>. Pick <span class="math notranslate nohighlight">\(N=N(\epsilon)\)</span> such that</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(|t_n-t_m |&lt;\varepsilon\)</span> whenever <span class="math notranslate nohighlight">\(m,n\geq N\)</span> and</p></li>
+<li><p><span class="math notranslate nohighlight">\(a_n \leq b_n\)</span> whenever <span class="math notranslate nohighlight">\(n\geq N\)</span>.</p></li>
+</ul>
+<p>Then for <span class="math notranslate nohighlight">\(n&gt;m&gt;N\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[ |s_n-s_m | = a_{m+1} + \cdots +a_n \leq b_{m+1} + \cdots +b_n = |t_n-t_m|&lt;\varepsilon. \]</div>
+<p>So the sequence of partial sums <span class="math notranslate nohighlight">\((s_n)\)</span> is also Cauchy. Hence it converges (<a class="reference internal" href="chapter3_Sequences.html#cs">Theorem 22</a>), and <span class="math notranslate nohighlight">\((a_n)\)</span> is summable as required.</p>
+</div>
+<p>The applicability of this cannot be understated, it is used all the time. Of course, there is this teeny, tiny, not-a-big-issue-really point where we are comparing with series that we already know they converge (for an application of part(1)) or diverge (to use part (2)). Which suggests that one should compile a small library of series, each with a…tag highlighting its “convergence status”. To get you started, we already know the result for <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}\)</span> and <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2},\)</span> and also for geometric series of the form <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} r^n,\)</span> for the whole range of <span class="math notranslate nohighlight">\(r \geq 0\)</span> (again, I insist that we can only use this criterion, as is, for series of non-negative terms).</p>
+<div class="proof remark admonition" id="remark-15">
+<p class="admonition-title"><span class="caption-number">Remark 10 </span></p>
+<section class="remark-content" id="proof-content">
+<p>The above theorem is still true under the weaker assumption that <span class="math notranslate nohighlight">\(a_n \leq b_n\)</span> for <span class="math notranslate nohighlight">\(\mathbb{N} \ni n \geq N,\)</span> some <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> (think about this!). It is also true under the different assumption <span class="math notranslate nohighlight">\(\lambda a_n \leq \mu b_n\)</span> for fixed positive <span class="math notranslate nohighlight">\(\lambda,mu \in \mathbb{R}\)</span>. This is also not hard to prove, it might be an exercise for a tutorial.</p>
+</section>
+</div><p>And now,</p>
+</section>
+<section id="examples">
+<h4>Examples:<a class="headerlink" href="#examples" title="Permalink to this heading">#</a></h4>
+<p>The first two examples are important in their own right, and I want you to remember the results as theory. Funnily enough, we will use the comparison test to show the convergence of a whole family of series, which in turn becomes an excellent series to compare with for other series!</p>
+<p><strong>CHECK THIS</strong></p>
+<div class="proof example admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 30 </span></p>
+<section class="example-content" id="proof-content">
+<p><strong>Result</strong></p>
+<div class="math notranslate nohighlight">
+\[\text{If} \quad p&gt;1, \quad \text{then} \quad \displaystyle \sum_{n=1}^\infty \frac{1}{n^p} \quad \text{converges}.\]</div>
+<p>We will split into two cases, <span class="math notranslate nohighlight">\(1&lt;p&lt;2\)</span> and <span class="math notranslate nohighlight">\(p\geq 2.\)</span> We will start from the easy case  <span class="math notranslate nohighlight">\(p\geq 2\)</span>:</p>
+<p>For <span class="math notranslate nohighlight">\(\displaystyle n\geq 1: n^p \geq n^2 \Rightarrow \frac{1}{n^p} \leq \frac{1}{n^2}.\)</span> We have already seen that<br />
+<span class="math notranslate nohighlight">\( \displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\)</span> converges and the comparison test takes us home.</p>
+<p>We will now tackle the case <span class="math notranslate nohighlight">\(1&lt;p&lt;2\)</span> (and notice that the approach can be used, verbatim, to prove the result for the whole range of <span class="math notranslate nohighlight">\(p \geq 2\)</span> <a class="footnote-reference brackets" href="#highlight" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>.)</p>
+<p>For the record, there is a much easier proof of this result, but I decided on this one as it paves the way for understanding another test that we will see later.</p>
+<p>As usual, <span class="math notranslate nohighlight">\((s_n)\)</span> will be how we will denote the corresponding sequence of partial sums. Consider the subsequence, wait for it, <span class="math notranslate nohighlight">\((s_{2^{n+1}-1}),\)</span> <a class="footnote-reference brackets" href="#easierproofs" id="id7" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a> and for each fixed <span class="math notranslate nohighlight">\(n,\)</span> we are going to group the terms in <span class="math notranslate nohighlight">\(s_{2^{n+1}-1}\)</span> into <span class="math notranslate nohighlight">\(n+1\)</span> groups -of consecutive terms- each group having <span class="math notranslate nohighlight">\(1,2,2^2, \cdots ,2^n\)</span> terms respectively <a class="footnote-reference brackets" href="#check" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a>.</p>
+<p>[By the way, notice that this is exactly the approach we used in <a class="reference internal" href="#harmonic">Example 26</a>.]</p>
+<p>From each of the groups, we are going to bound all of its terms from above by the first -which is the largest every time- term of the group. I.e., the sum of the terms in each of the groups is bounded above by</p>
+<div class="math notranslate nohighlight">
+\[\text{(first term of the group)}\times \text{(number of terms in the group)}\]</div>
+<p>I.e.,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+s_{2^{n+1}-1} &amp;= \underbrace{1}_{\text{1 term}} +  
+\underbrace{\left(\frac{1}{2^p}+\frac{1}{3^p}\right) }_{\text{2 terms}} + \cdots + \underbrace{\left(\frac{1}{(2^n)^p}+\frac{1}{(2^{n+1}-1)^p}\right)}_{2^n \hspace{0.3em} \text{terms}} \\
+&amp;\leq 1 + \frac{2}{2^p}+\cdots + \frac{2^n}{2^{pn}} = 1 + \frac{1}{2^{p-1}} + \cdots + \frac{1}{2^{n(p-1)}}\\
+&amp;=\frac{1-2^{(1-p)(n+1)}}{1-2^{1-p}}\\
+&amp;\leq \frac{1}{1-2^{1-p}}.
+\end{split}\end{split}\]</div>
+<p>After all this work the punchline is a bit anticlimactic: we notice that  <span class="math notranslate nohighlight">\((s_{2^{n+1}-1})\)</span> is bounded. How does that help? If we were to bound anything, that would be <span class="math notranslate nohighlight">\((s_n)\)</span>. Thankfully, for every <span class="math notranslate nohighlight">\(n \in \mathbb{N},\)</span>
+<span class="math notranslate nohighlight">\(s_n \leq  s_{2^{n+1}-1}\)</span> (again, because we only have non-negative terms). Of course <span class="math notranslate nohighlight">\((s_n)\)</span> is also increasing so the series converges.</p>
+</section>
+</div><div class="proof example admonition" id="example-17">
+<p class="admonition-title"><span class="caption-number">Example 31 </span></p>
+<section class="example-content" id="proof-content">
+<p><strong>Result:</strong></p>
+<div class="math notranslate nohighlight">
+\[\text{ If} \quad 0&lt;p \leq1, \quad \text{then} \quad \displaystyle \sum_{n=1}^\infty \frac{1}{n^p} \quad \text{diverges}.\]</div>
+<p>If <span class="math notranslate nohighlight">\(0&lt;p\leq 1\)</span>: <span class="math notranslate nohighlight">\(\displaystyle \frac{1}{n} \leq \frac{1}{n^p}\)</span> and by <a class="reference internal" href="#harmonic">Example 26</a>, the series <span class="math notranslate nohighlight">\(\displaystyle \displaystyle \sum_{n=1}^\infty \frac{1}{n}\)</span> diverges. The comparison test takes us home once again.</p>
+</section>
+</div><div class="proof example admonition" id="example-18">
+<p class="admonition-title"><span class="caption-number">Example 32 </span></p>
+<section class="example-content" id="proof-content">
+<p>Show that the series</p>
+<div class="math notranslate nohighlight">
+\[ \sum_{n=1}^\infty n3^{-n}\]</div>
+<p>converges.</p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Observe that for all <span class="math notranslate nohighlight">\(n\in\mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(n\leq 2^n\)</span>. Hence
+<span class="math notranslate nohighlight">\( n3^{-n} \leq 2^n 3^{-n} = \left( \frac{2}{3} \right)^n \)</span>
+and the series
+<span class="math notranslate nohighlight">\( \sum_{n=1}^\infty \left( \frac{2}{3} \right)^n \)</span>
+is a geometric series, with common ratio <span class="math notranslate nohighlight">\(\displaystyle \frac{2}{3}&lt;1\)</span>, which converges. Hence the series
+<span class="math notranslate nohighlight">\( \sum_{n=1}^\infty n3^{-n} . \)</span>
+also converges by the comparison test.</p>
+</div>
+<div class="admonition-warning admonition">
+<p class="admonition-title"><strong>Warning:</strong></p>
+<p>There are cases where the comparison test is inconclusive. For example, since for <span class="math notranslate nohighlight">\(n &gt; 1\)</span> we always have <span class="math notranslate nohighlight">\(\displaystyle n^2 &gt; n \Leftrightarrow a_n:=\frac{1}{n^2} &lt; \frac1n=:b_n.\)</span> Applying the comparison test here tells us nothing: indeed, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}\)</span> diverges so we can infer nothing about <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> (the inequality we need to check goes the other way), but also <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{1}{n^2}\)</span> converges and again we cannot use the Comparison Theorem to say anything useful about <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}\)</span> (again, the inequality goes the “wrong way”). This is an important lesson, we have already seen different arguments to prove that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> converges and that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}\)</span> diverges, and there is nothing to shake our belief on those results - they have been proved! What this comment highlights is an instance of the warning I issued once before: failure to apply one of the convergence tests (because some condition is not satisfied) does NOT imply that (1) the series in question diverges, and it does NOT imply that (2) there is no other way to deduce whether it converges or not. <strong>This is a point that keeps tripping students up, so be careful!</strong></p>
+</div>
+<p>We will not cover the next result in class (and the approach is somewhat more advanced) but do have a look on your own, for mathematical culture’s sake.</p>
+<div class="proof example admonition" id="example-19">
+<p class="admonition-title"><span class="caption-number">Example 33 </span> (The number <span class="math notranslate nohighlight">\(e\)</span> as the sum of a series)</p>
+<section class="example-content" id="proof-content">
+<p>Recall that <span class="math notranslate nohighlight">\(e\)</span> is defined as the limit of the sequence</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \left(1+\frac1n \right)^n.\]</div>
+<p>We will show that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n!} = e.\)</span></p>
+<p>Before we argue about how the sum can be computed, we need to first verify that the series converges; if not, there is no point looking for its sum, as it’s not (you don’t say!) summable. We will apply the comparison test using a convergent geometric series, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{2^n}.\)</span> Indeed, for all <span class="math notranslate nohighlight">\(\displaystyle n\geq 2: \frac{1}{n!} \leq \frac{1}{2^n}\)</span> (check why!), so the comparison test conclusively asserts that the series converges.</p>
+<p>Now set <span class="math notranslate nohighlight">\(\displaystyle s= \displaystyle \sum_{n=1}^{\infty} \frac{1}{n!}\)</span> and aim to show <span class="math notranslate nohighlight">\(s=e.\)</span> Call <span class="math notranslate nohighlight">\(s_n\)</span> the corresponding sequence of partial sums, so of course <span class="math notranslate nohighlight">\(s_n \to s.\)</span> We observe the following (employing the well-known binomial expansion):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+\displaystyle \left(1+\frac1n \right)^n &amp;= \sum_{k=0}^{n} {n \choose k} \frac{1}{n^k}\\
+&amp;= 1 +  \sum_{k=1}^{n} \frac{1}{k!} \frac{(n-k+1)(n-k+2)\cdots(n-1)n}{n \cdot n \cdots n \cdot n}\\
+&amp;= 1+  \sum_{k=1}^{n} \frac{1}{k!} \left(1-\frac{k-1}{n}\right) \left(1-\frac{k-2}{n}\right)\cdots \left(1-\frac{1}{n}\right)\\
+&amp;&lt; \sum_{k=0}^{n} \frac{1}{k!} \qquad \text{(why?)}\\
+&amp;=s_n.
+\end{split}\end{split}\]</div>
+<p>Invoking <a class="reference internal" href="chapter3_Sequences.html#OLT">Theorem 15</a> when we take limits as <span class="math notranslate nohighlight">\(n \to \infty\)</span> we get that <span class="math notranslate nohighlight">\(e\leq s \quad (1).\)</span></p>
+<p>It suffices to also show <span class="math notranslate nohighlight">\(e \geq s \hspace{0.5em} (2),\)</span> which combined with <span class="math notranslate nohighlight">\((1)\)</span> will yield the result.</p>
+<p>Let <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span> Since <span class="math notranslate nohighlight">\(s_n \to s,\)</span> there is some <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(s_{N} &gt; s-\epsilon\)</span> <a class="footnote-reference brackets" href="#saslimit" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a>. Then for each <span class="math notranslate nohighlight">\(n &gt; N\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \left(1+\frac1n \right)^n=\sum_{k=0}^{n} {n \choose k} \frac{1}{n^k} &gt; 1 + \sum_{k=1}^{N} \frac{1}{k!} \left(1-\frac{k-1}{n}\right) \left(1-\frac{k-2}{n}\right)\cdots \left(1-\frac{1}{n}\right).\]</div>
+<p>Once again, invoking <a class="reference internal" href="chapter3_Sequences.html#OLT">Theorem 15</a> when we take limits as <span class="math notranslate nohighlight">\(n \to \infty\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[ e\geq \sum_{k=0}^{N} \frac{1}{k!}=s_N &gt; s-\epsilon,\]</div>
+<p>which is true for all <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span>implying <span class="math notranslate nohighlight">\(e\geq s,\)</span> which proves (2) and with that finishing the proof. Certainly a tricky argument <a class="footnote-reference brackets" href="#notonexam" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a>, but it is also cute, no?</p>
+</section>
+</div><p>The next criterion is pretty interesting (and maybe even easier to use) because it only requires checking a limit involving the sequences being summed.</p>
+<div class="proof theorem admonition" id="LimitTest">
+<p class="admonition-title"><span class="caption-number">Theorem 28 </span> (Limit Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n),(b_n)\)</span> be sequences of <em>positive</em> numbers, and assume that <span class="math notranslate nohighlight">\(\displaystyle \frac{a_n}{b_n} \to l,\)</span>} where <span class="math notranslate nohighlight">\(l &gt;0.\)</span> Then,</p>
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges <strong>if and only if</strong> the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> converges.</p>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. Since <span class="math notranslate nohighlight">\(\displaystyle \frac{a_n}{b_n} \to l,\)</span> there is <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle \left|\frac{a_n}{b_n} - l \right|&lt; \frac{l}{2},\)</span> for all <span class="math notranslate nohighlight">\(n\geq N\)</span> (what was used here?). Therefore (opening up the absolute value),</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{l}{2} &lt; \frac{a_n}{b_n} &lt; \frac{3l}{2}, \quad \text{for all} \hspace{0.3em} n\geq N.\]</div>
+<p>Rearranging, we get <span class="math notranslate nohighlight">\(\displaystyle \frac{l}{2} b_n &lt; a_n&lt; \frac{3l}{2} b_n, \quad \text{for all} \hspace{0.3em} n\geq N,\)</span> which is enough to conclude by appealing to the comparison test.</p>
+</div>
+</section>
+<section id="comments-and-examples">
+<h4>Comments and examples:<a class="headerlink" href="#comments-and-examples" title="Permalink to this heading">#</a></h4>
+<div class="proof example admonition" id="example-21">
+<p class="admonition-title"><span class="caption-number">Example 34 </span></p>
+<section class="example-content" id="proof-content">
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{n+2}{n^3-n-8}\)</span> converges since <span class="math notranslate nohighlight">\(\displaystyle \frac{\frac{n+2}{n^3-n-8}}{\frac{1}{n^2}} \to 1\)</span> and we know that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> converges.</p>
+</section>
+</div><p>We can also use this criterion as a <em>divergence test</em>. Indeed, say we have two series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n, \sum_{n=1}^{\infty} b_n\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle \frac{a_n}{b_n} \to l &gt;0.\)</span> Then if one, say <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> diverges, the other can’t possibly converge: if <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converged, by the limit test the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> would also converge (impossible) because the theorem asserts:</p>
+<p><em>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges <strong>if and only if</strong> the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> converges.</em></p>
+<p>Another way to see that the limit test can also serve as a divergence test is to revisit it’s proof. Towards the end we said</p>
+<p>“…Rearranging, we get <span class="math notranslate nohighlight">\(\displaystyle \frac{l}{2} b_n &lt; a_n&lt; \frac{3l}{2} b_n, \quad \text{for all} \hspace{0.3em} n\geq N,\)</span> …”.</p>
+<p>I.e., if <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> diverges, the comparison test (look at the left-hand-side inequality) tells us that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> also diverges.</p>
+<p>Here’s an other example.</p>
+<div class="proof example admonition" id="example-22">
+<p class="admonition-title"><span class="caption-number">Example 35 </span></p>
+<section class="example-content" id="proof-content">
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{\sqrt{n}}{n+2}\)</span> diverges  since <span class="math notranslate nohighlight">\(\displaystyle \frac{ \frac{\sqrt{n}}{n+2}}{ \frac{1}{\sqrt{n}}}\to 1\)</span> and we have seen that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^{1/2}}\)</span> diverges.</p>
+</section>
+</div><p>Notice that doesn’t really matter whether we consider the limit <span class="math notranslate nohighlight">\(\displaystyle \frac{a_n}{b_n}\)</span> or the limit <span class="math notranslate nohighlight">\(\displaystyle \frac{b_n}{a_n}\)</span>: if we know that one them exists, say  <span class="math notranslate nohighlight">\(\displaystyle \frac{b_n}{a_n} \to l&gt;0,\)</span> by algebra of limits ({prf:ref}`AOL),</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{a_n}{b_n} = \frac{1}{\frac{b_n}{a_n}} \to \frac{1}{l} &gt;0.\]</div>
+<p>And of course, vice versa. This means that in the above example (works for the first one too, of course),
+we could have instead considered the limit <span class="math notranslate nohighlight">\(\displaystyle \frac{\frac{1}{\sqrt{n}}}{\frac{\sqrt{n}}{n+2}}.\)</span> This is also <span class="math notranslate nohighlight">\(1\)</span> and the same conclusion holds.</p>
+<div class="admonition-warning admonition">
+<p class="admonition-title">Warning!</p>
+<p>A pretty common mistake is that people forget the important requirement that <span class="math notranslate nohighlight">\(l&gt;0\)</span> for the limit of <span class="math notranslate nohighlight">\(\displaystyle \frac{b_n}{a_n}.\)</span> If you end up getting <span class="math notranslate nohighlight">\(\displaystyle \frac{b_n}{a_n} \to 0\)</span> (or <span class="math notranslate nohighlight">\(+\infty\)</span>, or if the limit doesn’t exist) <em>no conclusion can be reached</em> from the limit test, so you try a different one. For example</p>
+</div>
+<div class="proof example admonition" id="example-23">
+<p class="admonition-title"><span class="caption-number">Example 36 </span></p>
+<section class="example-content" id="proof-content">
+<p>The limit test cannot be used to say anything about the convergence of the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> (which we know converges) if we “limit-compare” it with <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}.\)</span> Indeed <span class="math notranslate nohighlight">\(\displaystyle \frac{\frac{1}{n^2}}{\frac{1}{n}} \to 0,\)</span> which falls outside of the remit of the limit test. And thank goodness for that because we know that the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}\)</span> diverges (sanity check!). If you are tempted to say, “maybe you should have considered the limit of <span class="math notranslate nohighlight">\(\displaystyle \frac{\frac{1}{n}}{\frac{1}{n^2}},\)</span>”, think again! This is now <span class="math notranslate nohighlight">\(+\infty,\)</span> rendering the test equally inconclusive.</p>
+</section>
+</div><p>The next criterion is very useful and you should expect to see it again in later courses, especially in L2 Analysis and L3 Complex Analysis. It is the main tool used to investigate the convergence of a power series (but for now, you can ignore the last sentence).</p>
+<div class="proof theorem admonition" id="RatioTest0">
+<p class="admonition-title"><span class="caption-number">Theorem 29 </span> (Ratio Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a sequence of positive numbers such that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{a_{n+1}}{a_n} \to l.\]</div>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\(l&lt;1\)</span>, then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges. <strong>Note:</strong> <span class="math notranslate nohighlight">\(l=0\)</span> is allowed in this case.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(l&gt;1,\)</span> then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n = +\infty.\)</span></p></li>
+<li><p>If <span class="math notranslate nohighlight">\(l=1,\)</span> the test is inconclusive and nothing can be said for the convergence of the series.</p></li>
+</ol>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof.</p>
+<ol class="arabic">
+<li><p>The idea shares features with the proof of the limit test. We will again “bend” the limit statement to our purposes, and in the end we will again resort to the comparison test.</p>
+<p>If <span class="math notranslate nohighlight">\(l&lt;1,\)</span> we can find an <span class="math notranslate nohighlight">\(\epsilon_1&gt;0\)</span> such that <span class="math notranslate nohighlight">\(l+\epsilon_1 &lt; 1.\)</span> Since <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} \to l,\)</span> there is an <span class="math notranslate nohighlight">\(N_1 \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle \left| \frac{a_{n+1}}{a_n} - l \right |&lt; \epsilon_1,\)</span> for all <span class="math notranslate nohighlight">\(n\geq N_1.\)</span> Opening up the absolute value (and keeping the right inequality) we see that, for all <span class="math notranslate nohighlight">\(n\geq N_1,\)</span> we have <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} &lt; l + \epsilon_1.\)</span></p>
+<p>We exploit the last inequality to obtain the following chain of inequalities</p>
+<div class="math notranslate nohighlight">
+\[a_{n+1} &lt; a_n (l+\epsilon_1)&lt; a_{n-1} (l+\epsilon_1)^2 &lt; a_{n-2} (l+\epsilon_1)^3&lt; \cdots &lt; a_{N_1} (l+\epsilon_1)^{n-N_1+1}.\]</div>
+<p>But as <span class="math notranslate nohighlight">\(0&lt;l+\epsilon_1 &lt; 1,\)</span> comparing our series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> with the convergent geometric series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (l+\epsilon_1 )^n\)</span> finishes the proof.</p>
+</li>
+<li><p>The strategy is identical to that of the first part. If <span class="math notranslate nohighlight">\(l&gt;1,\)</span> we can find <span class="math notranslate nohighlight">\(\epsilon_2&gt;0\)</span> such that <span class="math notranslate nohighlight">\(l-\epsilon_2 &gt; 1.\)</span> Since <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} \to l,\)</span> there is an <span class="math notranslate nohighlight">\(N_2 \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle \left| \frac{a_{n+1}}{a_n} - l \right |&lt; \epsilon_2,\)</span> for all <span class="math notranslate nohighlight">\(n\geq N_2.\)</span> Opening up the absolute value (and keeping the left inequality now) we see that, for all <span class="math notranslate nohighlight">\(n\geq N_2,\)</span> we have <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} &gt; l - \epsilon_2.\)</span> Therefore,</p>
+<div class="math notranslate nohighlight">
+\[a_{n+1} &gt; a_n (l-\epsilon_2)&gt; a_{n-1}(l-\epsilon_2)^2 &gt; a_{n-2}(l-\epsilon_2)^3 &gt; \cdots  &gt; a_{N_2}(l-\epsilon_2)^{n-N_2+1}.\]</div>
+<p>As <span class="math notranslate nohighlight">\(l-\epsilon_2&gt;1,\)</span> the geometric series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (l-\epsilon_2 )^n\)</span> diverges, and by the comparison criterion, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> diverges too.</p>
+</li>
+<li><p>Consider the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n}.\)</span> In this case <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} = \displaystyle \frac{\frac{1}{n+1}}{\frac{1}{n}} \to 1.\)</span> Moreover, for the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> we have <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} =\displaystyle \frac{\frac{1}{(n+1)^2}}{\frac{1}{n^2}} \to 1.\)</span> We know that the first one diverges, while the second one converges. So, if you try the ratio test and you get <span class="math notranslate nohighlight">\(1\)</span> as the answer to the limit of <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n}\)</span> you should try a different test.</p></li>
+</ol>
+</div>
+<div class="proof example admonition" id="example-25">
+<p class="admonition-title"><span class="caption-number">Example 37 </span></p>
+<section class="example-content" id="proof-content">
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{n!}{n^n}\)</span> converges since</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \frac{\frac{(n+1)!}{(n+1)^{n+1}}}{\frac{n!}{n^n}}= \displaystyle \left(\frac{n}{n+1}\right)^n \to \frac{1}{e}&lt;1.\]</div>
+<p><em>As a rule of thumb</em>, if you have factorials and/or powers in your summand there is a good chance that the ratio test will be helpful.</p>
+</section>
+</div><p>And yet another test for series with non-negative terms,</p>
+<div class="proof theorem admonition" id="RootTest">
+<p class="admonition-title"><span class="caption-number">Theorem 30 </span> (Root Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a sequence of non-negative numbers such that <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} \to l.\)</span> Then</p>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\(l&lt;1,\)</span> the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(l&gt;1,\)</span> the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> diverges.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(l=1,\)</span> the test is again inconclusive.</p></li>
+</ol>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof.</p>
+<ol class="arabic">
+<li><p>We’ve seen the idea a few times by now. If <span class="math notranslate nohighlight">\(l&lt;1\)</span> we can find an <span class="math notranslate nohighlight">\(\epsilon_0&gt;0\)</span> such that <span class="math notranslate nohighlight">\(l+\epsilon_0&lt;1.\)</span> Since <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} \to l,\)</span> there is <span class="math notranslate nohighlight">\(N_1 \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle |\sqrt[n]{a_n} -l | &lt; \epsilon_0,\)</span> for all <span class="math notranslate nohighlight">\(n\geq N_1.\)</span> Therefore, for all <span class="math notranslate nohighlight">\(n\geq N_1\)</span> we have <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} &lt; l+ \epsilon_0,\)</span> hence <span class="math notranslate nohighlight">\(\displaystyle a_n &lt; ( l+ \epsilon_0)^n.\)</span> As the geometric series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}( l+ \epsilon_0)^n\)</span> converges, by the comparison test <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges too.</p></li>
+<li><p>Similar to before, if <span class="math notranslate nohighlight">\(l&gt;1,\)</span> we can find <span class="math notranslate nohighlight">\(\epsilon_1&gt;0\)</span> such that <span class="math notranslate nohighlight">\(l-\epsilon_1 &gt; 1.\)</span> Since <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} \to l,\)</span> there is <span class="math notranslate nohighlight">\(N_2 \in \mathbb{N}\)</span> such that <span class="math notranslate nohighlight">\(\displaystyle |\sqrt[n]{a_n} -l | &lt; \epsilon_1,\)</span> for all <span class="math notranslate nohighlight">\(n\geq N_2.\)</span> Therefore, for all <span class="math notranslate nohighlight">\(n\geq N_2\)</span> we have <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} &lt; l - \epsilon_1,\)</span> hence <span class="math notranslate nohighlight">\(\displaystyle a_n &gt; ( l- \epsilon_1)^n.\)</span> As the geometric series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}( l- \epsilon_1)^n\)</span> diverges, so does the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span>.</p></li>
+<li><p>Once again, we notice that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \lim_{n \to \infty} \sqrt[n]{\frac{1}{n}} = 1 =  \lim_{n \to \infty} \sqrt[n]{\frac{1}{n^2}},\]</div>
+<p>but <span class="math notranslate nohighlight">\(\displaystyle  \sum_{n=1}^{\infty} \frac{1}{n}\)</span> diverges and <span class="math notranslate nohighlight">\(\displaystyle  \sum_{n=1}^{\infty} \frac{1}{n^2}\)</span> converges. One should try a different test in such a case.</p>
+</li>
+</ol>
+</div>
+<div class="proof example admonition" id="example-27">
+<p class="admonition-title"><span class="caption-number">Example 38 </span></p>
+<section class="example-content" id="proof-content">
+<p>The series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \left(1+\frac{1}{n} \right)^{-n^2}\)</span> converges by the root test, since</p>
+<div class="math notranslate nohighlight">
+\[\sqrt[n]{\left(1+\frac{1}{n} \right)^{-n^2}} = \left(1+\frac{1}{n} \right)^{-n} \to \frac{1}{e} &lt;1. \]</div>
+</section>
+</div></section>
+<section id="comment">
+<h4>Comment<a class="headerlink" href="#comment" title="Permalink to this heading">#</a></h4>
+<p>In both the ratio and the root tests, if <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n} \to +\infty\)</span> or if <span class="math notranslate nohighlight">\(\displaystyle \sqrt[n]{a_n} \to + \infty,\)</span> we can infer that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n = +\infty.\)</span> (A nice exercise for you!)</p>
+<p><em>The next two criteria are given for completeness, we will only cover them if there is time, and even in that case they won’t be examined (meaning neither their proofs nor applications of the theorems will be asked).</em></p>
+<p>First, a test with a different flavour to what we’ve done so far:</p>
+<div class="proof theorem admonition" id="IntegralTest0}">
+<p class="admonition-title"><span class="caption-number">Theorem 31 </span> (Integral Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f: [1,infty) \to \mathbb{R}\)</span> <em>continuous, decreasing, and non-negative</em>. Then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} f(n)\)</span> converges <em>if and only i</em>} the integral <span class="math notranslate nohighlight">\(\displaystyle \int_1^{\infty} f(x) dx\)</span> converges.</p>
+</section>
+</div><p>You have seen in MAS106, S1, improper integrals like <span class="math notranslate nohighlight">\(\displaystyle \int_1^{\infty} f(x) dx\)</span> and you have encountered the phrase “the improper integral converges”. However, to avoid confusion (and because we don’t have the time to redo this carefully), what I will be referring to as the “Integral Test” will be the following version:</p>
+<div class="proof theorem admonition" id="IntegralTest">
+<p class="admonition-title"><span class="caption-number">Theorem 32 </span> (Integral Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f: [1,\infty) \to \mathbb{R}\)</span> <em>continuous, decreasing, and non-negative</em>. Then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} f(n)\)</span> converges <em>if and only if</em> the sequence <span class="math notranslate nohighlight">\((x_n)\)</span> defined by <span class="math notranslate nohighlight">\(\left( \displaystyle \int_1^{n} f(x) dx \right)_n,\)</span> converges.</p>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. Let <span class="math notranslate nohighlight">\((s_n)\)</span> be the sequence of partial sums of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} f(n).\)</span> Since <span class="math notranslate nohighlight">\(f(x)\)</span> is decreasing we have <span class="math notranslate nohighlight">\(\displaystyle f(k+1) \leq f(x) \leq f(k)\)</span> for all <span class="math notranslate nohighlight">\(x\in [k,k+1], k \in \mathbb{N}.\)</span> Integrating with respect to <span class="math notranslate nohighlight">\(x\)</span> we get</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \int_k^{k+1} f(k+1) dx \leq \int_k^{k+1} f(x) dx \leq \int_k^{k+1} f(k) dx.\]</div>
+<p>Therefore (since <span class="math notranslate nohighlight">\(f(k), f(k+1)\)</span> are independent of <span class="math notranslate nohighlight">\(x\)</span> and hence are treated as constants in the integration) we have</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle f(k+1) ( (k+1) -k) \leq \int_k^{k+1} f(x) dx \leq f(k)( (k+1) -k),\]</div>
+<p>i.e.,</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle f(k+1) \leq \int_k^{k+1} f(x) dx \leq f(k).\]</div>
+<p>Let us now sum, with respect to <span class="math notranslate nohighlight">\(k\)</span>, from <span class="math notranslate nohighlight">\(1\)</span> to <span class="math notranslate nohighlight">\(n\)</span>. We get:</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{k=1}^{n} f(k+1) \leq  \sum_{k=1}^{n}  \int_k^{k+1} f(x) dx \leq \sum_{k=1}^{n} f(k),\]</div>
+<p>which is the same as</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{k=1}^{n} f(k+1) \leq  \int_1^{n+1} f(x) dx \leq \sum_{k=1}^{n} f(k).\]</div>
+<p>This is equivalent to</p>
+<div class="math notranslate nohighlight">
+\[s_{n+1} - f(1) \leq x_{n+1} \leq s_n.\]</div>
+<p>From the latter we infer the following:</p>
+<ul class="simple">
+<li><p>If the series is summable, then <span class="math notranslate nohighlight">\((s_n)\)</span> is bounded. But then <span class="math notranslate nohighlight">\((x_n)\)</span> is bounded, and since it is increasing (why?), it converges by <a class="reference internal" href="chapter3_Sequences.html#mon1">Theorem 17</a>.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\((x_n)\)</span> converges, then it’s bounded. But then <span class="math notranslate nohighlight">\((s_n)\)</span> is bounded and therefore the series converges (why?).</p></li>
+</ul>
+<p>(We could have also concluded from the comparison test, do you see how?)</p>
+</div>
+<p>Please note that (with a similar argument to the one we used for the previous test), this can be also used as divergence test. So if we show that the sequence of “associated” to a series integrals diverges, then the series itself diverges.</p>
+<div class="proof example admonition" id="example-30">
+<p class="admonition-title"><span class="caption-number">Example 39 </span></p>
+<section class="example-content" id="proof-content">
+<p>We will show that the series <span class="math notranslate nohighlight">\( \displaystyle \sum_{n=1}^{\infty} \frac{1}{(n+1)\ln(n+1)}\)</span> diverges.</p>
+<p>We can apply the integral test using the sequence <span class="math notranslate nohighlight">\(\displaystyle \left(\int_1^n \frac{1}{(x+1)\ln(x+1)} dx\right)_n.\)</span> First notice that we are indeed allowed to do so because <span class="math notranslate nohighlight">\(\displaystyle f(x):=\frac{1}{(x+1)\ln(x+1)}\)</span> is continuous, decreasing, and positive.</p>
+<p>We compute (for a fixed <span class="math notranslate nohighlight">\(n\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \int_1^n \frac{1}{(x+1)\ln(x+1)} dx = \ln(\ln(n+1)) -\ln(\ln(2)).\]</div>
+<p>But <span class="math notranslate nohighlight">\(\displaystyle \ln(\ln(n+1)) -\ln(\ln(2) \xrightarrow{n \to \infty} +\infty\)</span> and by the integral test the series diverges.</p>
+</section>
+</div><p>The second non-examinable test has a fancy name, the “Cauchy condensation test”. What’s that about?</p>
+<div class="proof theorem admonition" id="CauchyCondensation">
+<p class="admonition-title"><span class="caption-number">Theorem 33 </span> (Cauchy condensation test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n)\)</span> be a <strong>decreasing</strong> sequence of non-negative numbers. Then, the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges <em>if and only if</em> the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}2^n a_{2^n}\)</span> converges.</p>
+</section>
+</div><p>Before we give the proof, let’s make sure we are on the same page: the term <span class="math notranslate nohighlight">\(\displaystyle a_{2^n}\)</span> that appears in the summand simply means that the only terms, from <span class="math notranslate nohighlight">\((a_n),\)</span> that we will consider in the “summation” are the ones from a specific subsequence of <span class="math notranslate nohighlight">\((a_n),\)</span> the subsequence <span class="math notranslate nohighlight">\(\displaystyle \left(a_{2^k}\right)_k.\)</span></p>
+<div class="proof admonition" id="proof">
+<p>Proof. 	Let <span class="math notranslate nohighlight">\((s_n)\)</span> and <span class="math notranslate nohighlight">\((t_n)\)</span> be the sequences of partial sums of the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n,\)</span> <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}2^n a_{2^n}\)</span> respectively. We have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}		\begin{split}
+		s_{2^{n+1}-1}&amp;= a_1 + (a_2 +a_3) + (a_4+a_5+a_6+a_7)+\cdots+(a_{2^n}+\cdots+a_{2^{n+1}-1}) \\
+		&amp;\leq a_1 + 2a_2 + 4a_4+\cdots 2^na_{2^n} = t^n \qquad \text{(why?)}.
+		\end{split}\end{split}\]</div>
+<p>I.e., so far we have shown that <span class="math notranslate nohighlight">\(\displaystyle s_{2^{n+1}-1} \leq t_n \hspace{0.1em} (\ast).\)</span></p>
+<p>On the other hand,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}	\begin{split}
+		s_{2^{n+1}}&amp;=  a_1 + a_2 +(a_3 + a_4)+(a_5+a_6+a_7+a_8)+\cdots+(a_{2^n+1}+\cdots+a_{2^{n+1}}) \\
+		&amp;\geq a_1+a_2+ 2a_4 + 4a_8+ \cdots + 2^n a_{2^{n+1}}\\
+		&amp;=\frac12 \left(2a_1+2a_2+4a_4+8a_8+\cdots+2^{n+1}a_{2^{n+1}}\right)\\
+		&amp;=\frac12 \left(a_1+t_{n+1}\right).
+			\end{split}\end{split}\]</div>
+<p>I.e., we have now shown <span class="math notranslate nohighlight">\(\displaystyle t_{n+1} \leq 2s_{2^{n+1}}-a_1 \hspace{0.1em} (\ast \ast).\)</span></p>
+<p>Therefore, if <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}2^n a_{2^n}\)</span> converges, then <span class="math notranslate nohighlight">\((t_n)\)</span> is bounded, hence
+<span class="math notranslate nohighlight">\((s_{2^{n+1}})\)</span> is bounded from <span class="math notranslate nohighlight">\((\ast).\)</span></p>
+<p>Now, if <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}a_{n}\)</span> converges, then <span class="math notranslate nohighlight">\((s_n)\)</span> is bounded, hence <span class="math notranslate nohighlight">\((2s_{2^{n+1}}-a_1)\)</span> is bounded, and from <span class="math notranslate nohighlight">\(\displaystyle(\ast \ast),\)</span> <span class="math notranslate nohighlight">\((t_{n+1})\)</span> is also bounded. Hence,
+<span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}2^n a_{2^n}\)</span> converges.</p>
+</div>
+</section>
+<section id="id11">
+<h4>Comments<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h4>
+<p>Why “condensation”, do I hear you ask? While admittedly a bit strange, the name is not ill-suited at all. The point is that we are basically “condensing” the sequence down to the very “sparse” subsequence <span class="math notranslate nohighlight">\(\displaystyle \left(a_{2^k}\right)_k.\)</span> “Sparse” in the sense that as <span class="math notranslate nohighlight">\(n\)</span> increases, we are omitting more and more terms from the original sequence when we form the subsequence. In particular we only keep the terms</p>
+<div class="math notranslate nohighlight">
+\[a_1,a_2, a_4, a_8, a_{16}, a_{32}, a_{64}, a_{128}, a_{256}, \cdots,\]</div>
+<p>where the indices refer to the labelling of the original sequence. Notice, for example, how many terms we didn’t include between the term <span class="math notranslate nohighlight">\(a_{128}\)</span> and the term <span class="math notranslate nohighlight">\(a_{256}.\)</span> And it only gets “worse” as <span class="math notranslate nohighlight">\(n\)</span> increases, we leave out more and more terms.</p>
+<p>Notice that we have actually seen this idea before, e.g., when we showed that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac1n\)</span> diverges.</p>
+<p>I invite you to play with the theorem (and its proof) and try to apply it to some cases of the family of series given by <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^p}, \hspace{0.3em} p &gt;0.\)</span> As an explicit example of an application consider the following.</p>
+<div class="proof example admonition" id="example-32">
+<p class="admonition-title"><span class="caption-number">Example 40 </span> (Let <span class="math notranslate nohighlight">\(p&gt;0.\)</span> Then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=2}^{\infty} \frac{1}{(\ln n)^p}\)</span> diverges <a class="footnote-reference brackets" href="#cauchycondtest" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>10<span class="fn-bracket">]</span></a>. )</p>
+<section class="example-content" id="proof-content">
+<p>Indeed, noting that <span class="math notranslate nohighlight">\(\displaystyle (a_n):=\left( \frac{1}{\ln n}\right)_n, n \geq 2\)</span> is positive and decreasing, the Cauchy condensation test can be applied. In particular, it suffices to show <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n = +\infty,\)</span>
+where <span class="math notranslate nohighlight">\(\displaystyle a_n =\frac{2^n}{(\ln 2^n)^p}.\)</span> Now, an application of the ratio test, shows that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> diverges, and this is because <span class="math notranslate nohighlight">\(\displaystyle \frac{a_{n+1}}{a_n}= 2 \left( \frac{n}{n+1}\right)
+\to 2&gt;1.\)</span></p>
+</section>
+</div></section>
+</section>
+<section id="series-of-terms-with-arbitrary-signs">
+<h3>4.3.2 Series of terms with arbitrary signs<a class="headerlink" href="#series-of-terms-with-arbitrary-signs" title="Permalink to this heading">#</a></h3>
+<p>So we have now got a number of nice criteria to examine the convergence of series. However, so far, all
+of our results have been about series with non-negative terms. This is a substantial restriction, which of course we’d like to remove. We will remove it by looking at the stronger notion of <strong>absolute convergence</strong>, which deals with the series with all terms being replaced by their modulus (details to follow). This is a stronger notion, and therefore some care is necessary. We will also look at the idea of <strong>unconditional convergence</strong>, which is what happens when we rearrange the terms of a series. Do we end up always with the same answer? It might appear so, although some rather strange things can happen when the series doesn’t converge.</p>
+<div class="proof definition admonition" id="definition-33">
+<p class="admonition-title"><span class="caption-number">Definition 19 </span></p>
+<section class="definition-content" id="proof-content">
+<p>We say a series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> <strong>converges absolutely</strong> when the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty |a_n|\)</span> converges.</p>
+</section>
+</div><p>The first question you might ask is whether or not absolute convergence and the usual notion convergence are equivalent. The next example shows that this is not the case.</p>
+<p>Recall that at the very beginning of this chapter I introduced the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}\)</span> (which of course has both positive and negative terms). We argued informally there that the sum of this series appears to be <span class="math notranslate nohighlight">\(\approx 0.69.\)</span> As a matter of fact (take my word for it! Never mind how to get this.) it turns out that this series indeed converges, and we have that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n} = 1 - \frac12 +\frac13-\frac14+\cdots = \ln(2) \approx 0.69.\]</div>
+<p>Notice however, that if we consider the series where each of the terms in the original summand is replaced by its absolute value, we get the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \left| \frac{(-1)^{n+1}}{n} \right | = \sum_{n=1}^{\infty}\frac1n,\)</span> i.e., the harmonic series that we know diverges.</p>
+<p>So it is not true that convergence implies absolute convergence. However, the converse is true as the next result asserts.</p>
+<div class="proof proposition admonition" id="absoluteimpliesstandard">
+<p class="admonition-title"><span class="caption-number">Proposition 16 </span></p>
+<section class="proposition-content" id="proof-content">
+<p>Any series that converges absolutely also converges.</p>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. Suppose that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty |a_n|\)</span> converges. We need to show that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> converges.</p>
+<p>Write <span class="math notranslate nohighlight">\(\displaystyle t_n=|a_1|+\cdots +|a_n|\)</span> and <span class="math notranslate nohighlight">\(\displaystyle s_n=a_1+\cdots +a_n\)</span>.</p>
+<p>We know that <span class="math notranslate nohighlight">\((t_n)\)</span> converges and hence it is a Cauchy sequence. Let <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. Then there exists <span class="math notranslate nohighlight">\(N\)</span> such that for <span class="math notranslate nohighlight">\(m,n&gt;N\)</span>, <span class="math notranslate nohighlight">\(|t_n-t_m|&lt;\varepsilon \)</span>. For <span class="math notranslate nohighlight">\(n&gt;m&gt;N\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
+|s_n-s_m|&amp;=|(a_1+\cdots +a_n)-(a_1+\cdots +a_m)|=|a_{m+1}+\cdots +a_n|\\
+&amp;\leq |a_{m+1}|+\cdots +|a_n|=(|a_1|+\cdots +|a_n|)-(|a_1|+\cdots +|a_m|)\\
+&amp;=t_n-t_m=|t_n-t_m|&lt;\varepsilon.
+\end{align*}\end{split}\]</div>
+<p>Thus <span class="math notranslate nohighlight">\((s_n)\)</span> is also Cauchy and hence convergent by <a class="reference internal" href="chapter3_Sequences.html#cs">Theorem 22</a>.</p>
+</div>
+<p>The result can be quite handy when it comes to series that have both positive and negative terms. The whole point is that once we start working with <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty |a_n|\)</span> we are by default working with non-negative terms and hence we can use every single criterion we proved in the previous section! For example,</p>
+<div class="proof example admonition" id="example-35">
+<p class="admonition-title"><span class="caption-number">Example 41 </span></p>
+<section class="example-content" id="proof-content">
+<p>Suppose we want to study the convergence of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{\sin n}{n^2},\)</span> which is series with both positive and negative terms (make sure to check this, people always seem to think this is a series with non-negative terms).</p>
+<p>Until now, there was absolutely nothing (no pun intended) that we could do. The only two options available to us would have been to look at the partial sums, and either show they form a Cauchy sequence or find a closed-form expression for the general term and take the limit (good luck with either…); the second option would be to be pessimistic about showing that the series converges and try to apply the divergence test (which doesn’t have any sign restrictions). Before you waste your time, I am telling you it’s hopeless: the divergence criterion is inconclusive <a class="footnote-reference brackets" href="#noticethat" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>11<span class="fn-bracket">]</span></a> and we will soon see that the series actually converges.</p>
+<p>The strategy is to now look at the corresponding series of absolute values, which here is <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \left|\frac{\sin n}{n^2} \right|,\)</span> and try to show that this series converges. By <a class="reference internal" href="#absoluteimpliesstandard">Proposition 16</a>, the <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{\sin n}{n^2},\)</span> would also be convergent.</p>
+<p>Indeed, as <span class="math notranslate nohighlight">\(\displaystyle \left|\frac{\sin n}{n^2} \right| \leq \frac{1}{n^2}\)</span> and the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty  \frac{1}{n^2}\)</span> converges, by the comparison test,<span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \left|\frac{\sin n}{n^2} \right|\)</span> converges.</p>
+<p>To recap, we have shown that <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty \frac{\sin n}{n^2}\)</span> converges absolutely, which we have now seen also implies that the series converges (i.e., its sequence of partial sums converges).</p>
+</section>
+</div><p>If you think about it, what we were actually using in this example is the following corollary of <a class="reference internal" href="#absoluteimpliesstandard">Proposition 16</a> (as it is literally what I wrote above in the example, I won’t bother with recording the very easy proof).</p>
+<div class="proof corollary admonition" id="corollary-36">
+<p class="admonition-title"><span class="caption-number">Corollary 3 </span></p>
+<section class="corollary-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty b_n\)</span> be absolutely convergent. Suppose we have a sequence <span class="math notranslate nohighlight">\((a_n)\)</span> where <span class="math notranslate nohighlight">\(|a_n|\leq |b_n|\)</span> for all  sufficiently large <span class="math notranslate nohighlight">\(n\)</span>. Then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^\infty a_n\)</span> is also absolutely convergent.</p>
+</section>
+</div><p>For the record, I will also present a version of the ratio test in a form that can be directly applied to series with both positive and negative terms. Recall that when we discussed <a class="reference internal" href="#RatioTest0">Theorem 29</a> we insisted on the positivity of the terms in the summand.</p>
+<div class="proof theorem admonition" id="theorem-37">
+<p class="admonition-title"><span class="caption-number">Theorem 34 </span> (Ratio test - take 2)</p>
+<section class="theorem-content" id="proof-content">
+<p>Consider a series of non-zero terms</p>
+<div class="math notranslate nohighlight">
+\[ \sum_{n=1}^\infty a_n \]</div>
+<p>and suppose</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| =r. \]</div>
+<ol class="arabic simple">
+<li><p>If <span class="math notranslate nohighlight">\(r&lt;1\)</span>, the series converges absolutely.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(r&gt;1\)</span>, the series does not converge.</p></li>
+</ol>
+</section>
+</div><p>Note that if <span class="math notranslate nohighlight">\(r=1\)</span> we cannot tell by using the ratio test whether or not the series converges.</p>
+<div class="proof admonition" id="proof">
+<p>Proof. 1.  I don’t see any point in giving the proof for part (1). If <span class="math notranslate nohighlight">\((a_n)\)</span> is a sequence of positive terms, we have already done that in <a class="reference internal" href="#RatioTest0">Theorem 29</a>. If the series has negative terms too, we consider the series where the terms in the summand have been replaced by their absolute values (so now everything is positive). The proof is now, verbatim, the proof of <a class="reference internal" href="#RatioTest0">Theorem 29</a>, which shows that when <span class="math notranslate nohighlight">\(r&lt;1\)</span> the series converges absolutely, and hence by <a class="reference internal" href="#absoluteimpliesstandard">Proposition 16</a>, it converges.</p>
+<ol class="arabic" start="2">
+<li><p>For fun, let’s do something different for part (2).</p>
+<p>Suppose</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| =r &gt;1. \]</div>
+<p>Then there exists an <span class="math notranslate nohighlight">\(N\)</span> such that if <span class="math notranslate nohighlight">\(n\geq N\)</span>, then</p>
+<div class="math notranslate nohighlight">
+\[ \left| \frac{a_{n+1}}{a_n} \right| \geq 1. \]</div>
+<p>So,</p>
+<div class="math notranslate nohighlight">
+\[\cdots \geq |a_{N+2}|\geq |a_{N+1}|\geq |a_N|.\]</div>
+<p>So <span class="math notranslate nohighlight">\(\displaystyle \lim_{k\to\infty} |a_{N+k}|\geq |a_N|&gt;0\)</span>. So the sequence <span class="math notranslate nohighlight">\((a_n)\)</span> does not converge to <span class="math notranslate nohighlight">\(0\)</span> and so the series does not converge (by the divergence test, <a class="reference internal" href="#divergencecriterion">Proposition 14</a>).</p>
+</li>
+</ol>
+</div>
+<p>The following example is a typical case where one wants to apply the ratio test. As mentioned already there’s more of that in your mathematical future, so I thought I’d give you a preview. The series in the next example is a, so called, power series, because of the term <span class="math notranslate nohighlight">\(x^n.\)</span> You should remember that <span class="math notranslate nohighlight">\(x\)</span> here is a variable, i.e., for every different value of <span class="math notranslate nohighlight">\(x\)</span> we get a different (numerical series), which may or may not converge. The question we want to answer is “for what values of <span class="math notranslate nohighlight">\(x\)</span>, when plugged in, do we get a convergent series?”. For example, <span class="math notranslate nohighlight">\(x=1\)</span> is not good as it gives rise to the (divergent) harmonic series.</p>
+<div class="proof example admonition" id="example-38">
+<p class="admonition-title"><span class="caption-number">Example 42 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(x\in \mathbb{R}\)</span>. Investigate the convergence of the series</p>
+<div class="math notranslate nohighlight">
+\[ \sum_{n=1}^\infty \frac{x^n}{n} \]</div>
+<p>using the ratio test.</p>
+</section>
+</div><div class="admonition-solution admonition">
+<p class="admonition-title">Solution</p>
+<p>Set <span class="math notranslate nohighlight">\(\displaystyle a_n =x^n/n\)</span>. Then</p>
+<div class="math notranslate nohighlight">
+\[ \frac{a_{n+1}}{a_n} = \frac{x^{n+1}/(n+1)}{x^n/n} = \frac{nx}{n+1} = \frac{x}{1+1/n} \]</div>
+<p>So</p>
+<div class="math notranslate nohighlight">
+\[ \lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right| = |x|. \]</div>
+<p>Thus, by the ratio test, our series converges absolutely if <span class="math notranslate nohighlight">\(|x|&lt;1\)</span>, and does not converge if <span class="math notranslate nohighlight">\(|x|&gt;1\)</span>.</p>
+</div>
+<p>The ratio test does not tell us about convergence in the above example for <span class="math notranslate nohighlight">\(x=\pm 1\)</span>. It turns out that the series converges (but not absolutely) when <span class="math notranslate nohighlight">\(x=-1\)</span> (to <span class="math notranslate nohighlight">\({}-\ln(2)\)</span>), and, as we have already remarked, it does not converge when <span class="math notranslate nohighlight">\(x=1\)</span> (this is the harmonic series).</p>
+<section id="alternating-series-dirichlet-s-criterion">
+<h4>Alternating Series - Dirichlet’s criterion<a class="headerlink" href="#alternating-series-dirichlet-s-criterion" title="Permalink to this heading">#</a></h4>
+<p>Showing that a series converges absolutely is possible in several cases and it’s quite useful to have this as a weapon in our arsenal. However, notice that what we are essentially doing is reducing our original problem to one about a series of positive terms. You should anticipate two sources of trouble: (1) the resulting series of positive terms is a divergent one, and (2) you get a new series, positive terms and all that, but every test that you try seems to be inconclusive. There is some hope though (this usually manifests in problems with the challenge being of the first type), but one has to give up on showing absolute convergence, because it simply doesn’t hold!</p>
+<p>The main example that I have in mind is one that we’ve seen before: <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}.\)</span> On one hand, the series does not converge absolutely, but on the other, I have claimed (without proof up to now) that the series converges. So first of all this suggests that the space between “convergence” and “absolute convergence” is non-empty. We need a name for these creatures.</p>
+<div class="proof definition admonition" id="definition-39">
+<p class="admonition-title"><span class="caption-number">Definition 20 </span> (Conditional convergence)</p>
+<section class="definition-content" id="proof-content">
+<p>If the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} |a_n|\)</span> converges, we say that the <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span>  converges <em>absolutely</em>.</p>
+<p>If, on the other hand, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges but the series of the absolute values, <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} |a_n|\)</span> doesn’t, we say that the original series converges *<em>conditionally.</em></p>
+</section>
+</div><p>With this new jargon, the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\)</span> is conditionally convergent.</p>
+<p>The most well-known criterion to show that a series is conditionally convergent is the <em>Alternating Series Test</em>. It is easy to state, its conditions are easy to verify for applications, and the proof is not terribly hard. It is however limited to series with a particular form for the summand.</p>
+<div class="proof proposition admonition" id="AlternatingTest">
+<p class="admonition-title"><span class="caption-number">Proposition 17 </span> (Alternating Series Test)</p>
+<section class="proposition-content" id="proof-content">
+<p>Consider a series of the form</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=1}^{\infty} (-1)^{n+1} a_n = a_1 - a_2 + a_3 -a_4+\cdots,\]</div>
+<p>where <span class="math notranslate nohighlight">\((a_n)\)</span> is</p>
+<ol class="arabic simple">
+<li><p>non-negative,</p></li>
+<li><p>decreasing,</p></li>
+<li><p>such that <span class="math notranslate nohighlight">\(a_n \to 0.\)</span></p></li>
+</ol>
+<p>Then the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (-1)^{n+1} a_n\)</span> converges.</p>
+</section>
+</div><p>A <strong>comment</strong> first: This proposition guarantees that the series is <em>at least</em> conditionally convergent, but it doesn’t say anything about <em>absolute convergence</em>. If you are interested in the latter, you have no choice but to consider the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} |(-1)^{n+1} a_n | = \sum_{n=1}^{\infty} a_n\)</span> and try to show it converges. For example, the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^2}\)</span> certainly satisfies all the conditions of the alternating series test, so it converges conditionally. However, more is true: it also converges absolutely. In practice, we first consider the possibility of absolute convergence (as it implies convergence anyway); if we can’t answer this question in the affirmative, we should start thinking about conditional convergence.</p>
+<div class="proof admonition" id="proof">
+<p>Proof. Let <span class="math notranslate nohighlight">\(\displaystyle s_N = \sum_{n = 1}^N(-1)^{n + 1}a_n\)</span> the sequence of partial sums. Then, because <span class="math notranslate nohighlight">\((a_n)\)</span> is assumed to be decreasing, we have</p>
+<div class="math notranslate nohighlight">
+\[ s_{2n} = \underbrace{(a_1 - a_2)}_{\geq 0} + \underbrace{(a_3 - a_4)}_{\geq 0}  + \cdots + \underbrace{(a_{2n - 1} - a_{2n})}_{\geq 0}  \geq 0, \]</div>
+<p>and <span class="math notranslate nohighlight">\((s_{2n})\)</span> is an increasing sequence (check that you understand why! Hint: What is the next term in the <span class="math notranslate nohighlight">\((s_{2n})\)</span>  sequence?).</p>
+<p>Also,</p>
+<div class="math notranslate nohighlight">
+\[s_{2n + 1} = a_1 - \underbrace{(a_2 - a_3)}_{\leq 0} - \underbrace{(a_4 - a_5)}_{\leq 0} - \cdots - \underbrace{(a_{2n} - a_{2n + 1})}_{\leq 0} \leq a_1, \]</div>
+<p>and <span class="math notranslate nohighlight">\((s_{2n + 1})\)</span> is a decreasing sequence (again, check that you can understand why). (Same hint as above).</p>
+<p>Also note that <span class="math notranslate nohighlight">\(s_{2n + 1} - s_{2n} = a_{2n + 1} \geq 0,\)</span> for all <span class="math notranslate nohighlight">\(n \in \mathbb{N}.\)</span></p>
+<p>Hence we obtain the bounds <span class="math notranslate nohighlight">\(0 \leq s_{2n} \leq s_{2n + 1} \leq a_1\)</span>. It follows from the monotone convergence theorem, <a class="reference internal" href="chapter3_Sequences.html#mon1">Theorem 17</a>, that <span class="math notranslate nohighlight">\((s_{2n})\)</span> and <span class="math notranslate nohighlight">\((s_{2n + 1})\)</span> converge.</p>
+<p>Since <span class="math notranslate nohighlight">\(s_{2n + 1} - s_{2n} = a_{2n + 1} \to 0\)</span>, they converge to the same limit, so <span class="math notranslate nohighlight">\((s_{n})\)</span> converges <a class="footnote-reference brackets" href="#samelimit" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>12<span class="fn-bracket">]</span></a>, hence the series converges.</p>
+</div>
+<div class="proof example admonition" id="example-41">
+<p class="admonition-title"><span class="caption-number">Example 43 </span></p>
+<section class="example-content" id="proof-content">
+<p>We’ve already seen the case of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n^p}, \quad p&gt;0\)</span> <a class="footnote-reference brackets" href="#conconvergence" id="id15" role="doc-noteref"><span class="fn-bracket">[</span>13<span class="fn-bracket">]</span></a>.</p>
+<p>If you want something very concrete, look at the specific case</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle \sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{\sqrt[3]{n}}=1 - \frac{1}{\sqrt[3]{2}} + \frac{1}{\sqrt[3]{3}} - \frac{1}{\sqrt[3]{4}} + \cdots,\]</div>
+<p>which also converges, as we can easily verify that the conditions of <a class="reference internal" href="#AlternatingTest">Proposition 17</a> are satisfied.</p>
+</section>
+</div><p><strong>Comment:</strong></p>
+<p>The main disadvantage of the alternating series test is that indeed (you don’t say!) the signs have to be alternating. So for example, it doesn’t apply to series like the one we saw earlier, <span class="math notranslate nohighlight">\(\displaystyle  \sum_{n=1}^{\infty} \frac{\sin n}{n},\)</span> with a different sign pattern <a class="footnote-reference brackets" href="#signpattern" id="id16" role="doc-noteref"><span class="fn-bracket">[</span>14<span class="fn-bracket">]</span></a>. Of course in the case of that particular series this was not an issue, we could easily show it converges absolutely. For when this is not possible though, there is yet another test that can be of use. I am only including this for reference, we won’t prove or use it but I’d like you to be aware of its existence. This is called the Dirichlet Test (and the Alternating Series Test is actually a special case of that).</p>
+<div class="proof theorem admonition" id="Dirichlet">
+<p class="admonition-title"><span class="caption-number">Theorem 35 </span> (Dirichlet Test)</p>
+<section class="theorem-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\((a_n),(b_n)\)</span> be sequences of real numbers such that</p>
+<ol class="arabic simple">
+<li><p>The sequence <span class="math notranslate nohighlight">\((s_n)\)</span> of the partial sums of the series <span class="math notranslate nohighlight">\(\displaystyle  \sum_{n=1}^{\infty} b_n\)</span> is bounded.</p></li>
+<li><p>The sequence <span class="math notranslate nohighlight">\((a_n)\)</span> is decreasing and converges to <span class="math notranslate nohighlight">\(0.\)</span></p></li>
+</ol>
+</section>
+</div><p>We will skip the proof (feel free to look it up, or even better to do it yourselves!), but let’s see why I said that the Alternating Series Test is a special case. Notice that <span class="math notranslate nohighlight">\((a_n)\)</span> in the Dirichlet test doesn’t have to be non-negative, but if it is (a stronger condition) it satisfies all three requirements for the sequence <span class="math notranslate nohighlight">\((a_n)\)</span> for an application of <a class="reference internal" href="#AlternatingTest">Proposition 17</a> on series of the form <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} (-1)^{n+1} a_n.\)</span> If we set <span class="math notranslate nohighlight">\(b_n:= (-1)^{n+1},\)</span> we easily see that the sequence of its partial sums is bounded by <span class="math notranslate nohighlight">\(1.\)</span> The point is, the Dirichlet Test implies the Alternating Series Test (but not the other way around).</p>
+<p>We will this chapter and the course with something fun, a bit of a mathematical curiosity, which is certainly surprising and entertaining, and possibly with no applications to anything else (at least I have never seen an application).</p>
+</section>
+</section>
+<section id="rearrangements-and-riemann-s-theorem">
+<h3>4.3.3 Rearrangements and Riemann’s Theorem*<a class="headerlink" href="#rearrangements-and-riemann-s-theorem" title="Permalink to this heading">#</a></h3>
+<p>At the very beginning of the chapter we saw the notion of a “rearrangement” in a rather informal, way. We said “let’s move terms around, with no respect to their original position in the sequence being summed, <span class="math notranslate nohighlight">\((a_n)\)</span> and then look at the sums obtained in a few of these cases”.</p>
+<p>Starting to be more precise, but still informally speaking, a rearrangement of a series is obtained by permuting the terms in the sum into some other order.  It is important that all of the original terms eventually appear in the new ordering and that no term gets repeated. For example, we have previously formed a rearrangement of the alternating harmonic series by taking two positive terms for each negative term:</p>
+<div class="math notranslate nohighlight">
+\[1+\frac13 - \frac12 + \frac15 + \frac17 -\frac14 + \cdots\]</div>
+<p>There is clearly an infinite number of rearrangements of any infinite sum; however, it
+is helpful to see why neither</p>
+<div class="math notranslate nohighlight">
+\[1+\frac12 - \frac13 + \frac14 + \frac15 -\frac16 + \cdots\]</div>
+<p>nor</p>
+<div class="math notranslate nohighlight">
+\[1+\frac13 - \frac14 + \frac15 + \frac17 -\frac18 + \frac19 + \frac{1}{11}-\frac{1}{12}+ \cdots\]</div>
+<p>is considered a rearrangement of the original laternating harmonic series.</p>
+<p>The formal definition should now make more sense:</p>
+<div class="proof definition admonition" id="definition-43">
+<p class="admonition-title"><span class="caption-number">Definition 21 </span> (Rearrangements)</p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> be a series of real numbers, and let <span class="math notranslate nohighlight">\(\tau: \mathbb{N} \to \mathbb{N}\)</span> be an 1-1 and onto function (i.e., a bijection). Then <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_{\tau(n)}\)</span> is called a <em>rearrangement</em> of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span>.</p>
+</section>
+</div><p>We now have all the tools and notation in place to resolve an issue raised
+at the beginning of the chapter. In the introduction of this chapter (see section “Motivation”), we constructed a particular rearrangement of the alternating harmonic series that converges to a limit different from that of the original series! It turns out that this sort of thing can happen when the convergence of the series is only <em>conditional</em>. In fact, this cannot happen for a series converging absolutely as our next theorem asserts.</p>
+<div class="proof theorem admonition" id="theorem-44">
+<p class="admonition-title"><span class="caption-number">Theorem 36 </span></p>
+<section class="theorem-content" id="proof-content">
+<p>If the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> <em>converges absolutely</em>, then <strong>any rearrangement</strong> of
+this series converges to the same limit.</p>
+</section>
+</div><div class="proof admonition" id="proof">
+<p>Proof. <a class="footnote-reference brackets" href="#nonexam" id="id17" role="doc-noteref"><span class="fn-bracket">[</span>15<span class="fn-bracket">]</span></a>
+Assume <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> converges absolutely to <span class="math notranslate nohighlight">\(A,\)</span> and let <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> be a rearrangement of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> (for the time being we will hide the explicit dependence on the rearrangement function <span class="math notranslate nohighlight">\(\tau\)</span> as it can only obscure matters). Let <span class="math notranslate nohighlight">\((s_n)\)</span> be the sequence of partial sums of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n,\)</span> i.e.,</p>
+<div class="math notranslate nohighlight">
+\[s_n = \sum_{k=1}^{n} a_k=a_1 +a_2 + \cdots + a_n\]</div>
+<p>and let’s use the notation <span class="math notranslate nohighlight">\((t_m)\)</span> for the partial sums of the rearrangement, i.e.,</p>
+<div class="math notranslate nohighlight">
+\[t_m = \sum_{k=1}^{m} b_k=b_1 +b_2 + \cdots + b_m.\]</div>
+<p>We want to show <span class="math notranslate nohighlight">\(t_m \to A.\)</span></p>
+<p>Let <span class="math notranslate nohighlight">\( \epsilon &gt;0\)</span>. By hypothesis, <span class="math notranslate nohighlight">\((s_n) \to A\)</span>, so we can find <span class="math notranslate nohighlight">\(N_1 \in \mathbb{N}\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[|s_n - A| &lt; \frac{\epsilon}{2},\]</div>
+<p>for all <span class="math notranslate nohighlight">\(n \geq N_1.\)</span> Because the convergence is absolute, we can find <span class="math notranslate nohighlight">\(N_2\)</span> so that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle  \sum_{k=m+1}^{n} |a_k| &lt; \frac{\epsilon}{2},\]</div>
+<p>for all <span class="math notranslate nohighlight">\(n&gt; m \geq N_2.\)</span> Now, take <span class="math notranslate nohighlight">\(N = \max \{N_1, N_2\}.\)</span></p>
+<p>We know that the finite set of terms <span class="math notranslate nohighlight">\(\{a_1, a_2, a_3, \cdots ,a_N\}\)</span> must all appear in the rearranged series, and we want to move far enough out in the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} b_n\)</span> so that we have included all of these terms. Thus, choose</p>
+<div class="math notranslate nohighlight">
+\[M= \max \{\tau(k): 1\leq k \leq N\}, \hspace{0.5em} \text{where} \hspace{0.3em} \tau \hspace{0.3em} \text{is the corresponding rearrangement function.}\]</div>
+<p>It should be clear now that if <span class="math notranslate nohighlight">\(m \geq  M,\)</span> then <span class="math notranslate nohighlight">\(\displaystyle(t_m-s_N)\)</span> consists of a finite
+set of terms, the absolute values of which appear in the tail <span class="math notranslate nohighlight">\(\displaystyle  \sum_{k=N+1}^{\infty} |a_k|.\)</span></p>
+<p>Our choice of <span class="math notranslate nohighlight">\(N_2\)</span> earlier then guarantees <span class="math notranslate nohighlight">\(\displaystyle |t_m-s_N| &lt; \frac{\epsilon}{2},\)</span> and so</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}	\begin{split}
+		|t_m -A| &amp;= | t_m - s_N + s_N - A| \\
+		&amp;\leq  | t_m - s_N| + |s_N - A| \\
+		&amp;&lt; \frac{\epsilon}{2} +  \frac{\epsilon}{2} = \epsilon
+	\end{split}\end{split}\]</div>
+<p>for <span class="math notranslate nohighlight">\(m \geq M.\)</span></p>
+</div>
+<p>The above result explains that we shouldn’t have been surprised that the two rearrangements of the alternating geometric series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \left(-\frac{1}{2}\right)^n = \displaystyle \sum_{n=1}^{\infty} \frac{(-1)^n}{2^n}\)</span> had the same limit as the latter converges absolutely.</p>
+<p>Thankfully (according to some, including myself), life is not always boring! We have Riemann to thank for the following surprising result that I still find mind-blowing:</p>
+<div class="proof theorem admonition" id="theorem-45">
+<p class="admonition-title"><span class="caption-number">Theorem 37 </span> (Riemann’s Theorem)</p>
+<section class="theorem-content" id="proof-content">
+<p>If the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} a_n\)</span> <strong>converges conditionally</strong> (but not  <em>absolutely</em>), then, given <strong>ANY</strong> <span class="math notranslate nohighlight">\(x\in \mathbb{R},\)</span> there is <strong>a</strong> rearrangement <span class="math notranslate nohighlight">\(\tau_x: \mathbb{N} \to \mathbb{N}\)</span> such that</p>
+<div class="math notranslate nohighlight">
+\[\displaystyle x= \sum_{n=1}^{\infty} a_{\tau_x(n)} \quad !!!\]</div>
+</section>
+</div><p>It would be silly to say anything more right after THAT. So,</p>
+<div class="admonition-the-end admonition">
+<p class="admonition-title"><strong>THE END</strong>  </p>
+<p><a class="footnote-reference brackets" href="#theend" id="id18" role="doc-noteref"><span class="fn-bracket">[</span>16<span class="fn-bracket">]</span></a></p>
+</div>
+<hr class="footnotes docutils" />
+<aside class="footnote brackets" id="soon" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Worry not, we will soon define everything properly.}</p>
+</aside>
+<aside class="footnote brackets" id="suprised" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>You’d better be surprised! Despite the increbly slow pace at which the sum grows, the sequence of partial sums of <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty}\frac{1}{n}\)</span> eventually surpasses every number on the positive real line.</p>
+</aside>
+<aside class="footnote brackets" id="notcauchy" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>Set yourself the exercise to figure out all the details of the above claim, why would that imply that <span class="math notranslate nohighlight">\((s_n)\)</span> is not Cauchy?</p>
+</aside>
+<aside class="footnote brackets" id="calculus" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">4</a><span class="fn-bracket">]</span></span>
+<p>This is however “Calculus” rather than “Analysis” material so we won’t spend time on this unless we end up finish the rest of the material sooner than planned. It’s good fun though and useful in “practice”.</p>
+</aside>
+<aside class="footnote brackets" id="highlight" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">5</a><span class="fn-bracket">]</span></span>
+<p>But I wanted to highlight the use of the comparison test and also show you the coming proof.</p>
+</aside>
+<aside class="footnote brackets" id="easierproofs" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">6</a><span class="fn-bracket">]</span></span>
+<p>I told you, there are easier proofs…</p>
+</aside>
+<aside class="footnote brackets" id="check" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">7</a><span class="fn-bracket">]</span></span>
+<p>Check: <span class="math notranslate nohighlight">\(\displaystyle 1+2+2^2+ \cdots+ 2^n =\sum_{k=0}^n 2^k = \frac{2^{n+1}-1}{2-1}=2^{n+1}-1\)</span> many terms</p>
+</aside>
+<aside class="footnote brackets" id="saslimit" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">8</a><span class="fn-bracket">]</span></span>
+<p>Since <span class="math notranslate nohighlight">\(s_n \to s\)</span> we have that  <span class="math notranslate nohighlight">\(|s_n - s|&lt; \epsilon, \forall n\geq N,\)</span> which in turn, implies <span class="math notranslate nohighlight">\(-\epsilon &lt;s_N - s &lt; \epsilon,\)</span> the left-hand-side of which rearranges to what we wrote.</p>
+</aside>
+<aside class="footnote brackets" id="notonexam" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id10">9</a><span class="fn-bracket">]</span></span>
+<p>No, nothing like that would be on the exam.</p>
+</aside>
+<aside class="footnote brackets" id="cauchycondtest" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id12">10</a><span class="fn-bracket">]</span></span>
+<p>Exactly as before, the Cauchy condensation test can be used for divergence.</p>
+</aside>
+<aside class="footnote brackets" id="noticethat" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id13">11</a><span class="fn-bracket">]</span></span>
+<p>Notice that <span class="math notranslate nohighlight">\(\displaystyle -\frac{1}{n^2}\leq \frac{\sin n}{n^2} \leq \frac{1}{n^2}\)</span> and by the Squeeze Theorem we get that <span class="math notranslate nohighlight">\(\displaystyle \frac{\sin n}{n^2} \to 0.\)</span></p>
+</aside>
+<aside class="footnote brackets" id="samelimit" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id14">12</a><span class="fn-bracket">]</span></span>
+<p>We have not seen this result, but it is an instructive exercise to show that a sequence <span class="math notranslate nohighlight">\((a_n)\)</span> converges if and only if the subsequences <span class="math notranslate nohighlight">\((a_{2n}),(a_{2n+1})\)</span> converge to the same limit.</p>
+</aside>
+<aside class="footnote brackets" id="conconvergence" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id15">13</a><span class="fn-bracket">]</span></span>
+<p>Note, that interestingly, we can show conditional convergence for every <span class="math notranslate nohighlight">\(p&gt;0,\)</span> which is in contrast to the results we showed for the series <span class="math notranslate nohighlight">\(\displaystyle \sum_{n=1}^{\infty} \frac{1}{n^p}.\)</span></p>
+</aside>
+<aside class="footnote brackets" id="signpattern" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id16">14</a><span class="fn-bracket">]</span></span>
+<p><span class="math notranslate nohighlight">\(+,+,+,-,-,-,+,+,+,-,-,-,cdots\)</span></p>
+</aside>
+<aside class="footnote brackets" id="nonexam" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id17">15</a><span class="fn-bracket">]</span></span>
+<p>For reference only, non-examinable.</p>
+</aside>
+<aside class="footnote brackets" id="theend" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id18">16</a><span class="fn-bracket">]</span></span>
+<p>By which I mean “the end of the beginning”.</p>
+</aside>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter3_Sequences.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chapter 3 Sequences</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter5_WhatsNext.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chapter 5 What’s next?</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">4.1 Motivation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-covered-in-this-chapter">What’s covered in this chapter:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-of-infinite-series">4.2 Convergence of infinite series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#are-sums-of-infinite-series-easily-computable">Are sums of infinite series (easily) computable?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-on-the-above-approach">Comments on the above approach:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetic-of-convergent-series">4.2.1 Arithmetic of convergent series</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-and-divergence-tests-for-series">4.3 Convergence (and divergence) tests for series</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#convergence-criteria-for-series-with-non-negative-terms">4.3.1 Convergence criteria for series with non-negative terms</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comments">Comments:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#examples">Examples:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comments-and-examples">Comments and examples:</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comment">Comment</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Comments</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#series-of-terms-with-arbitrary-signs">4.3.2 Series of terms with arbitrary signs</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#alternating-series-dirichlet-s-criterion">Alternating Series - Dirichlet’s criterion</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rearrangements-and-riemann-s-theorem">4.3.3 Rearrangements and Riemann’s Theorem*</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dimitrios Roxanas
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
